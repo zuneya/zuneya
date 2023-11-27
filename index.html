@@ -1,802 +1,1716 @@
-<!DOCTYPE html>
+<!-- dtd -->
+<!doctype html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
-<meta name="naver-site-verification" content="3648765a62f108e4bd624d0ec64c3e9fbc0fba0c" />
-<meta name="google-site-verification" content="koLZdRYDhLL72VplbmQtEexrn_XDpvUsVyPDmZaBOYo" />
-<meta name="google-site-verification: google26828b1dadab1042" />
-<meta name="google-site-verification=9q18EaqfjzZ7slTr1WNjxBlrfuiwTgAruoJyTrKh1ZE" />
-<meta name="NaverBot" content="All"/>
-<meta name="NaverBot" content="index,follow"/>
-<meta name="Yeti" content="All"/>
-<meta name="Yeti" content="index,follow"/>
-<!-- Google Analytics -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>랭콘</title>
+<link rel="Shortcut Icon" href="/favicon.ico"><!-- 파비콘 -->
+<link rel="apple-touch-icon-precomposed" href="/favicon.png"><!-- 파비콘 -->
+
+<meta name="facebook-domain-verification" content="f23ejr9lzbwm8o9vq23h87p7jedgkw" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KB9TBBQS');</script>
+<!-- End Google Tag Manager -->
+
+<meta name="Title" content="">
+<meta name="Subject" content="">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta name="reply-to" content="">
+<meta name="Robots" content="">
+<meta property="og:type" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+<meta name="twitter:card" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="">
+<meta name="twitter:domain" content="">
+<meta name="google-site-verification" content="">
+<meta name="naver-site-verification" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no"/>
+<link rel="stylesheet" type="text/css" href="/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/css/animate.css" />
+<link rel="stylesheet" type="text/css" href="/css/layout.css?ver=230824">
+<link rel="stylesheet" type="text/css" href="/css/content.css?ver=231023">
+<link rel="stylesheet" type="text/css" href="/css/main.css?ver=230824" />
+<link rel="stylesheet" type="text/css" href="/css/layout_responsive.css?ver=230802">
+<!-- 아이콘폰트 -->
+<link rel="stylesheet" type="text/css" href="/css/xeicon.min.css">
+<!-- Plugin -->
+<link rel="stylesheet" type="text/css" href="/css/slick.css">
+<link rel="stylesheet" type="text/css" href="/css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="/css/jquery.fullPage.css" />
+
+<script type="text/javascript" src="/js/vendor/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/js/vendor/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/js/app/member.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="/css/popup.css?ver=231117" />
+<link rel="stylesheet" type="text/css" href="/css/slick.css?ver=231117"/>
+<!-- //dtd -->
+
 <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-XXXXX-Y', 'auto');
-ga('send', 'pageview');
+	$(function  () {
+		dep1 = 0,
+		dep2 = 0;
+	})
 </script>
-<!-- End Google Analytics -->
-<title>[##_page_title_##]</title>
-<link rel="stylesheet" href="./style.css">
-<script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-1.12.4.min.js"></script>
-<style type="text/css">
-<s_if_var_point-color>
-.entry-content a, .post-header h1 em, .comments h2 .count {color:[##_var_point-color_##]}
-.comment-form .submit button:hover, .comment-form .submit button:focus {background-color:[##_var_point-color_##]}
-</s_if_var_point-color>
-<s_if_var_promotion-1-btn-color>
-.main-slider ul li:nth-child(1) .btn {background-color:[##_var_promotion-1-btn-color_##]}
-</s_if_var_promotion-1-btn-color>
-<s_if_var_promotion-1-btn-hover-color>
-.main-slider ul li:nth-child(1) .btn:hover {background-color:[##_var_promotion-1-btn-hover-color_##]}
-</s_if_var_promotion-1-btn-hover-color>
-</style>
+
+
+
 </head>
-<body id="[##_body_id_##]" class="<s_if_var_layout-aside>[##_var_layout-aside_##]</s_if_var_layout-aside><s_if_var_list-type> [##_var_list-type_##]</s_if_var_list-type><s_if_var_view-more> [##_var_view-more_##]</s_if_var_view-more><s_not_var_promotion-mobile-view> promotion-mobile-hide</s_not_var_promotion-mobile-view>">
-<s_t3>
-<div id="acc-nav">
-	<a href="#content">본문 바로가기</a>
+
+<body>
+
+<!-- 이벤트 시작 -->
+
+
+<script type="text/javascript" src="/js/slick.js"></script>
+
+<!-- 이벤트 레이어  -->
+<div class="modal-fixed-pop-wrapper layer-popup" id="popup_layer">
+		<div class="modal-fixed-pop-inner">
+			<div class="modal-inner-box">
+				<div class="modal-inner-content">
+					<section class="img-modal-content">
+						<div class="img-modal-inner">
+												
+							<!-- 슬라이드컨트롤 -->
+							  <section class="banner slider">
+							    <div>
+							      <a href=""  onclick="fnGoEventPage2();return false;">
+							      	<img src="/images/event/popup_231024_04.png" alt="겨울학기개강" class="responsive-image">
+							      </a>
+							    </div>
+							    <div>
+							      <a href=""  onclick="fnGoEventPage1();return false;">
+							      	<img src="/images/event/popup_231024_03.png" alt="겨울학기특강" class="responsive-image">
+							      </a>
+							    </div>
+							  </section>
+							<!-- 슬라이드컨트롤 -->	
+							<div class="img-btn-box" >
+								<button title="오늘 하루 보지 않기" class="img-modal-close-btn" onclick="fnSetOneDayClose()">오늘 하루 보지 않기</button>
+								<button title="닫기" class="img-modal-close-btn" onclick="fnClosePop()">닫기</button>
+							</div>
+							<div class="dotDiv" style="display:block;margin-top:10px; ">
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
 </div>
-<div id="wrap">
-	<header id="header">
-		<div class="inner">
-			<h1>
-				<a href="[##_blog_link_##]">
-					<s_if_var_logo>
-						<img src="[##_var_logo_##]" alt="[##_title_##]">
-					</s_if_var_logo>
-					<s_not_var_logo>
-						[##_title_##]
-					</s_not_var_logo>
+<!-- 이벤트 레이어  -->
+
+
+	<script type="text/javascript">
+	
+	    $(".banner").slick({
+	      infinite: true
+	      ,speed: 1000
+	      ,slidesToShow: 1
+	      ,slidesToScroll: 1
+	      ,autoplay: true
+	      ,autoplaySpeed : 3000
+	      ,arrows : false
+	      ,dots : true
+	      ,adaptiveHeight: false
+	      ,appendDots : $(".banner")
+	      ,initialSlide:0
+	      ,fade:false
+	      //,dotsClass:"new-dots"
+	      
+	    });
+
+	    $('.banner').on('swipe', function(event, slick, direction){
+	      console.log(direction);
+	      // left
+	    });
+
+	    // On edge hit
+	    $('.banner').on('edge', function(event, slick, direction){
+	      console.log('edge was hit')
+	    });
+
+	    // On before slide change
+	    $('.banner').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+	      console.log("nextSlide");
+	    });
+	    
+	    
+	</script>
+	
+	<!-- 이벤트 스크립트   -->
+<script>
+
+	var cookieObj ;
+
+	var toggleMainPopup = function() {
+	  
+	  /* 쿠키 제어 함수 정의 */
+	  var handleCookie = {
+	    // 쿠키 쓰기
+	    // 이름, 값, 만료일
+	    setCookie: function (name, val, exp) {
+	      var date = new Date();
+	      
+	      // 만료 시간 구하기(exp를 ms단위로 변경)
+	      date.setTime(date.getTime() + exp * 24 * 60 * 60 * 1000);
+	      console.log(name + "=" + val + ";expires=" + date.toUTCString() + ";path=/");
+	      
+	      // 실제로 쿠키 작성하기
+	      document.cookie = name + "=" + val + ";expires=" + date.toUTCString() + ";";
+	    },
+	    // 쿠키 읽어오기(정규식 이용해서 가져오기)
+	    getCookie: function (name) {
+	      var value = document.cookie.match("(^|;) ?" + name + "=([^;]*)(;|$)");
+	      return value ? value[2] : null;
+	    }
+	  };
+	  cookieObj = handleCookie;
+	  console.log(handleCookie.getCookie("today"));
+	  
+	  // 쿠키 읽고 화면 보이게
+	  if (handleCookie.getCookie("today") == "y") {
+	    document.getElementById("popup_layer").style.display = "none";
+	  } else {
+	    document.getElementById("popup_layer").style.display = "block";
+	  }
+	}
+
+	$(function() {
+	  toggleMainPopup();
+	});
+
+
+	//페이지 이동
+	function fnGoEventPage1(){
+		window.open('//m.avalon.co.kr/langconpop/langcon_23wiin.html', '_blank');
+	}
+
+	function fnGoEventPage2(){
+		window.open('//www.instagram.com/p/Cznnvl9xP9P', '_blank');
+	}
+	
+	
+	//팝업 띄우기
+	function fnOpenPop() {
+	    document.getElementById("popup_layer").style.display = "block";
+
+	}
+
+	//팝업 닫기
+	function fnClosePop() {
+	    document.getElementById("popup_layer").style.display = "none";
+	}
+
+	//오늘하루만보기 쿠키 설정 
+	function fnSetOneDayClose() {
+	    cookieObj.setCookie("today", "y", 1);
+	    fnClosePop();
+	}
+
+	
+</script>
+ 
+<!-- 이벤트 끝 -->
+
+
+<!--[if lt IE 7]>
+<p class="cm-alert-ie">현재 웹브라우저에서는 사이트가 정상적으로 표시되지 않을 수 있습니다. <strong><a href="http://browsehappy.com/" target="_blank">여기를 클릭</a></strong>하여 웹브라우저를 업그레이드 하세요.</p>
+<![endif]-->
+	<!-- accessibility -->
+	<div class="cm-accessibility">
+		<a href="#mainContainer">본문바로가기</a>
+	</div>
+	<!-- //accessibility -->
+
+	<div id="wrap">
+		<div class="ms-preloader"></div>
+		<!-- header -->
+<header id="header" class="top-fixed-object"><!-- .top-fixed가 붙는 object에 top-fixed-object 클래스 추가  -->
+	<div class="gnb-overlay-bg"></div>
+	<div id="headerInnerWrap">
+		<!-- ****************** 헤더상단 ********************** -->
+		<div id="headerInner" class="clearfix area-box">
+			<h1 class="logo">
+				<a href="/">
+					<em class="blind">메인으로</em>
+					<img class="ori-ver" src="./images/common/logo.png" alt="랭콘" />
+					<img class="color-ver" src="./images/common/logo_c.png" alt="랭콘" />
 				</a>
 			</h1>
-			<div class="util">
-				<div class="search">
-					<s_search>
-						<input type="text" name="[##_search_name_##]" value="[##_search_text_##]" placeholder="검색내용을 입력하세요." onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }">
-						<button type="submit" onclick="[##_search_onclick_submit_##]">검색</button>
-					</s_search>
-				</div>
-				<div class="profile">
-					<button type="button">[##_blog_image_##]</button>
-					<nav>
-						<ul>
-							<li><a href="[##_owner_url_##]">관리</a></li>
-							<li><a href="[##_owner_url_##]/entry/post ">글쓰기</a></li>
-							<li class="login"><a href="#">로그인</a></li>
-							<li class="logout"><a href="#">로그아웃</a></li>
-						</ul>
-					</nav>
-				</div>
-				<button type="button" class="menu"><span>메뉴</span></button>
-			</div>
-			<nav id="gnb">
-				[##_blog_menu_##]
-			</nav>
-		</div>
-	</header>
-	<section id="container">
-		<s_if_var_promotion-1-image>
-			<div class="main-slider">
-				<ul>
-					<li style="background-image: url([##_var_promotion-1-image_##]);">
-						<s_if_var_promotion-1-url>
-							<a href="[##_var_promotion-1-url_##]">
-								<span class="inner">
-									<span class="box">
-										<s_if_var_promotion-1-text>
-											<span class="text"<s_if_var_promotion-1-color> style="color:[##_var_promotion-1-color_##]"</s_if_var_promotion-1-color>>
-												[##_var_promotion-1-text_##]
-											</span>
-										</s_if_var_promotion-1-text>
-										<span class="btn">바로가기</span>
-									</span>
-								</span>
-							</a>
-						</s_if_var_promotion-1-url>
-						<s_not_var_promotion-1-url>
-							<span class="inner">
-								<span class="box">
-									<s_if_var_promotion-1-text>
-										<span class="text"<s_if_var_promotion-1-color> style="color:[##_var_promotion-1-color_##]"</s_if_var_promotion-1-color>>
-										[##_var_promotion-1-text_##]
-										</span>
-									</s_if_var_promotion-1-text>
-								</span>
-							</span>
-						</s_not_var_promotion-1-url>
-					</li>
-					<s_if_var_promotion-2-image>
-						<li style="background-image: url([##_var_promotion-2-image_##]);">
-							<s_if_var_promotion-2-url>
-								<a href="[##_var_promotion-2-url_##]">
-									<span class="inner">
-										<span class="box">
-											<s_if_var_promotion-2-text>
-												<span class="text"<s_if_var_promotion-2-color> style="color:[##_var_promotion-2-color_##]"</s_if_var_promotion-2-color>>
-													[##_var_promotion-2-text_##]
-												</span>
-											</s_if_var_promotion-2-text>
-											<span class="btn"<s_if_var_promotion-2-btn-color> style="background-color:[##_var_promotion-2-btn-color_##]"</s_if_var_promotion-2-btn-color>>바로가기</span>
-										</span>
-									</span>
-								</a>
-							</s_if_var_promotion-2-url>
-							<s_not_var_promotion-2-url>
-								<span class="inner">
-									<span class="box">
-										<s_if_var_promotion-2-text>
-											<span class="text"<s_if_var_promotion-2-color> style="color:[##_var_promotion-2-color_##]"</s_if_var_promotion-2-color>>
-											[##_var_promotion-2-text_##]
-											</span>
-										</s_if_var_promotion-2-text>
-									</span>
-								</span>
-							</s_not_var_promotion-2-url>
-						</li>
-					</s_if_var_promotion-2-image>
-					<s_if_var_promotion-3-image>
-						<li style="background-image: url([##_var_promotion-3-image_##]);">
-							<s_if_var_promotion-3-url>
-								<a href="[##_var_promotion-3-url_##]">
-									<span class="inner">
-										<span class="box">
-											<s_if_var_promotion-3-text>
-												<span class="text"<s_if_var_promotion-3-color> style="color:[##_var_promotion-3-color_##]"</s_if_var_promotion-3-color>>
-													[##_var_promotion-3-text_##]
-												</span>
-											</s_if_var_promotion-3-text>
-											<span class="btn"<s_if_var_promotion-3-btn-color> style="background-color:[##_var_promotion-3-btn-color_##]"</s_if_var_promotion-3-btn-color>>바로가기</span>
-										</span>
-									</span>
-								</a>
-							</s_if_var_promotion-3-url>
-							<s_not_var_promotion-3-url>
-								<span class="inner">
-									<span class="box">
-										<s_if_var_promotion-3-text>
-											<span class="text"<s_if_var_promotion-3-color> style="color:[##_var_promotion-3-color_##]"</s_if_var_promotion-3-color>>
-											[##_var_promotion-3-text_##]
-											</span>
-										</s_if_var_promotion-3-text>
-									</span>
-								</span>
-							</s_not_var_promotion-3-url>
-						</li>
-					</s_if_var_promotion-3-image>
+			<div class="header-util-box">
+				<!-- sns 리스트 -->
+				<ul class="header-sns-list">
+					<li><a href="https://blog.naver.com/langconenglish" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145.7 66.53"><defs></defs><g id="레이어_2" data-name="레이어 2"><g id="Layer_1" data-name="Layer 1"><path class="cls-1" d="M40.45,0V11.94s5.44.9,5.44,7.78V49.55H57.16V20.1C56.24,1,40.45,0,40.45,0Z"/><path class="cls-1" d="M97.24,20.9a19.05,19.05,0,0,0-6.17-3.85,20.49,20.49,0,0,0-7.37-1.34,19.89,19.89,0,0,0-7.25,1.34,19.65,19.65,0,0,0-6.18,3.85A18.42,18.42,0,0,0,66,26.75a16.75,16.75,0,0,0,0,13.59,18.42,18.42,0,0,0,4.23,5.85A19.47,19.47,0,0,0,76.45,50a19.89,19.89,0,0,0,7.25,1.34A20.49,20.49,0,0,0,91.07,50a18.89,18.89,0,0,0,6.17-3.85,17.5,17.5,0,0,0,4.14-5.78,17.3,17.3,0,0,0,0-13.73A17.6,17.6,0,0,0,97.24,20.9ZM89.17,39a7.48,7.48,0,0,1-5.48,2.28A7.29,7.29,0,0,1,78.3,39a7.92,7.92,0,0,1,0-11,7.3,7.3,0,0,1,5.39-2.29,7.8,7.8,0,0,1,7.76,7.81A7.52,7.52,0,0,1,89.17,39Z"/><path class="cls-1" d="M22.83,15.84c-4.68.16-8.65,1-11.64,3.58h-.14V1H0V49.19H11.05V46.85h.14a16,16,0,0,0,10,3.13c4.87,0,9.34-1.38,12.26-4.67s4.36-6.39,4.36-11.82A19.31,19.31,0,0,0,33.5,21.1C31,18.22,26.83,15.71,22.83,15.84ZM24,39.07a7.46,7.46,0,0,1-5.48,2.28,7.27,7.27,0,0,1-5.38-2.28,7.93,7.93,0,0,1,0-11,7.27,7.27,0,0,1,5.38-2.28A7.46,7.46,0,0,1,24,28a7.83,7.83,0,0,1,0,11.05Z"/><path class="cls-1" d="M134.72,16.05v2.64h-.15c-2.67-2.44-5.4-3.49-9.73-3.49-4.84,0-9.07,1.61-12,5.08s-4.46,8.12-4.46,14q0,7.86,4,12.54a14.26,14.26,0,0,0,11.14,4.79c4.88,0,8.57-1.26,11.08-4.74h.15v2.25c0,5.82-6.18,8.78-10.67,8.33V66.2c5.38.77,11.78.47,16.26-3.8,3.78-3.58,5.39-8.74,5.39-17.21V16.05Zm-2.12,23a7.46,7.46,0,0,1-5.48,2.28,7.27,7.27,0,0,1-5.38-2.28,7.93,7.93,0,0,1,0-11,7.27,7.27,0,0,1,5.38-2.28A7.46,7.46,0,0,1,132.6,28a7.83,7.83,0,0,1,0,11.05Z"/></g></g></svg></a></li>
+					<li><a href="https://www.youtube.com/channel/UC5ouH4nfBUp_jTj0xPqjyNA" target="_blank"><i class="xi-youtube-play"></i></a></li>
+					<li><a href="https://www.instagram.com/avalonenglish/" target="_blank"><i class="xi-instagram"></i></a></li>
+				</ul>
+				<!-- 회원메뉴 -->
+				<ul class="header-member-list">
+					<li><a href="javascript:void(0);" onclick="fn_CmmSignUp();">Sign Up</a></li>
+					<li><a href="./member/login">Login</a></li>
 				</ul>
 			</div>
-		</s_if_var_promotion-1-image>
-		<div class="content-wrap">
-			<article id="content">
-				[##_revenue_list_upper_##]
-
-				<s_cover_group>
-					<s_cover_rep>
-
-						<s_cover name='cover-thumbnail-1'>
-							<div class="cover-thumbnail-1">
-								<h2>[##_cover_title_##]</h2>
-								<ul>
-									<s_cover_item>
-										<li>
-											<a href="[##_cover_item_url_##]">
-												<figure>
-													<s_cover_item_thumbnail>
-														<img src="//i1.daumcdn.net/thumb/C420x300/?fname=[##_cover_item_thumbnail_##]" alt="">
-													</s_cover_item_thumbnail>
-												</figure>
-												<span class="title">[##_cover_item_title_##]</span>
-												<s_cover_item_article_info>
-													<span class="date">[##_cover_item_simple_date_##]</span>
-												</s_cover_item_article_info>
-											</a>
-										</li>
-									</s_cover_item>
-								</ul>
-								<s_cover_url>
-									<a href="[##_cover_url_##]" class="more">more</a>
-								</s_cover_url>
-							</div>
-						</s_cover>
-
-						<s_cover name='cover-thumbnail-2'>
-							<div class="cover-thumbnail-2">
-								<h2>[##_cover_title_##]</h2>
-								<ul>
-									<s_cover_item>
-										<li>
-											<a href="[##_cover_item_url_##]">
-												<figure>
-													<s_cover_item_thumbnail>
-														<img src="//i1.daumcdn.net/thumb/C126x166/?fname=[##_cover_item_thumbnail_##]" alt="">
-													</s_cover_item_thumbnail>
-												</figure>
-												<span class="title">[##_cover_item_title_##]</span>
-												<span class="excerpt">[##_cover_item_summary_##]</span>
-												<s_cover_item_article_info>
-													<span class="meta">
-														<span class="date">[##_cover_item_simple_date_##]</span>
-													</span>
-												</s_cover_item_article_info>
-											</a>
-										</li>
-									</s_cover_item>
-								</ul>
-							</div>
-						</s_cover>
-
-						<s_cover name='cover-thumbnail-3'>
-							<div class="cover-thumbnail-3">
-								<h2>[##_cover_title_##]</h2>
-								<ul>
-									<s_cover_item>
-										<li>
-											<a href="[##_cover_item_url_##]">
-												<figure>
-													<s_cover_item_thumbnail>
-														<img src="//i1.daumcdn.net/thumb/C126x164/?fname=[##_cover_item_thumbnail_##]" alt="">
-													</s_cover_item_thumbnail>
-												</figure>
-												<span class="title">[##_cover_item_title_##]</span>
-											</a>
-										</li>
-									</s_cover_item>
-								</ul>
-							</div>
-						</s_cover>
-
-						<s_cover name='cover-thumbnail-4'>
-							<div class="cover-thumbnail-4">
-								<h2>[##_cover_title_##]</h2>
-								<ul>
-									<s_cover_item>
-										<li>
-											<a href="[##_cover_item_url_##]">
-												<figure>
-													<s_cover_item_thumbnail>
-														<img src="//i1.daumcdn.net/thumb/C230x140/?fname=[##_cover_item_thumbnail_##]" alt="">
-													</s_cover_item_thumbnail>
-												</figure>
-												<span class="title">[##_cover_item_title_##]</span>
-												<s_cover_item_article_info>
-													<span class="excerpt">[##_cover_item_summary_##]</span>
-													<span class="meta">
-														<span class="comment">댓글 [##_cover_item_comment_count_##]</span>
-														<span class="date">[##_cover_item_simple_date_##]</span>
-													</span>
-												</s_cover_item_article_info>
-											</a>
-										</li>
-									</s_cover_item>
-								</ul>
-							</div>
-						</s_cover>
-
-						<s_cover name='cover-list'>
-							<div class="cover-list">
-								<h2>[##_cover_title_##]</h2>
-								<ul>
-									<s_cover_item>
-										<li>
-											<a href="[##_cover_item_url_##]">
-                                                <span class="title">[##_cover_item_title_##]</span>
-                                                <span class="excerpt">[##_cover_item_summary_##]</span>
-												<s_cover_item_article_info>
-													<span class="date">[##_cover_item_simple_date_##]</span>
-												</s_cover_item_article_info>
-											</a>
-										</li>
-									</s_cover_item>
-								</ul>
-							</div>
-						</s_cover>
-
-						<s_cover name='cover-event'>
-							<div class="cover-event">
-								<h2>[##_cover_title_##]</h2>
-								<ul>
-									<s_cover_item>
-										<li>
-											<a href="[##_cover_item_url_##]" <s_cover_item_thumbnail> style="background-image:url(//i1.daumcdn.net/thumb/C360x120/?fname=[##_cover_item_thumbnail_##])"</s_cover_item_thumbnail>>
-												<s_cover_item_article_info>
-													<span class="title">[##_cover_item_title_##]</span>
-													<span class="more">more</span>
-												</s_cover_item_article_info>
-											</a>
-										</li>
-									</s_cover_item>
-								</ul>
-							</div>
-						</s_cover>
-
-					</s_cover_rep>
-				</s_cover_group>
-
-				<s_page_rep>
-					<div class="post-cover">
-						<div class="inner">
-							<h1>[##_article_rep_title_##]</h1>
-							<span class="meta">
-								<span class="author">by [##_article_rep_author_##]</span>
-								<span class="date">[##_article_rep_simple_date_##]</span>
-							</span>
-						</div>
-					</div>
-					<div class="entry-content">
-						[##_article_rep_desc_##]
-					</div>
-				</s_page_rep>
-
-				<s_notice_rep>
-					<div class="post-cover notice"<s_notice_rep_thumbnail> style="background-image: url([##_notice_rep_thumbnail_raw_url_##]);"</s_notice_rep_thumbnail>>
-						<div class="inner">
-							<h1><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h1>
-							<span class="meta">
-								<span class="date">[##_notice_rep_simple_date_##]</span>
-							</span>
-						</div>
-					</div>
-					<div class="entry-content">
-						[##_notice_rep_desc_##]
-					</div>
-				</s_notice_rep>
-
-				<s_list>
-					<div class="post-header">
-						<h1><span>[##_list_conform_##]</span><em>[##_list_count_##]</em></h1>
-					</div>
-					<s_list_empty>
-						<div class="not-found">
-							<ul>
-								<li>입력하신 단어의 철자가 정확한지 확인해 보세요.</li>
-								<li>검색어의 단어 수를 줄이거나, 보다 일반적인 단어로 검색해 보세요.</li>
-								<li>두 단어 이상의 키워드로 검색 하신 경우, 정확하게 띄어쓰기를 한 후 검색해 보세요.</li>
-							</ul>
-							<ul class="tag">
-								<li>선택하신 태그에 해당하는 글이 없습니다.</li>
-								<li>다른 태그를 선택하시거나, 검색 기능을 활용해 보세요.</li>
-							</ul>
-							<ul class="category">
-								<li>선택하신 카테고리에 해당하는 글이 없습니다.</li>
-								<li>다른 카테고리를 선택하시거나, 검색 기능을 활용해 보세요.</li>
-							</ul>
-							<ul class="archive">
-								<li>선택하신 기간에 등록된 글이 없습니다.</li>
-							</ul>
-						</div>
-					</s_list_empty>
-				</s_list>
-
-				<s_article_protected>
-					<s_index_article_rep>
-						<div class="post-item protected">
-								<a href="[##_article_rep_link_##]">
-									<span class="thum"></span>
-									<span class="title">[##_article_rep_title_##]</span>
-									<span class="excerpt">보호되어 있는 글 입니다.</span>
-								<span class="meta">
-										<span class="date">[##_article_rep_simple_date_##]</span>
-									</span>
-								</a>
-							</div>
-					</s_index_article_rep>
-
-					<s_permalink_article_rep>
-						<div class="entry-content">
-							<form class="protected_form" onsubmit="{reloadEntry(14);return false;}">
-								<h2>보호되어 있는 글입니다.</h2>
-								<p>내용을 보시려면 비밀번호를 입력하세요.</p>
-								<input type="password" id="entry14password" name="entry14password" value="" placeholder="비밀번호">
-								<button type="submit" class="btn">확인</button>
-							</form>
-						</div>
-					</s_permalink_article_rep>
-				</s_article_protected>
-
-				<div class="inner">
-					<s_article_rep>
-
-						<s_index_article_rep>
-							<div class="post-item">
-								<a href="[##_article_rep_link_##]">
-									<span class="thum">
-										<s_article_rep_thumbnail>
-											<img src="//i1.daumcdn.net/thumb/C420x300/?fname=[##_article_rep_thumbnail_raw_url_##]" alt="">
-										</s_article_rep_thumbnail>
-									</span>
-									<span class="title">[##_article_rep_title_##]</span>
-									<span class="excerpt">[##_article_rep_summary_##]</span>
-								<span class="meta">
-										<span class="date">[##_article_rep_simple_date_##]</span>
-									</span>
-								</a>
-							</div>
-						</s_index_article_rep>
-
-						<s_permalink_article_rep>
-							<div class="post-cover"<s_article_rep_thumbnail> style="background-image:url([##_article_rep_thumbnail_raw_url_##])"</s_article_rep_thumbnail>>
-								<div class="inner">
-									<span class="category">[##_article_rep_category_##]</span>
-									<h1>[##_article_rep_title_##]</h1>
-									<span class="meta">
-										<span class="author">by [##_article_rep_author_##]</span>
-										<span class="date">[##_article_rep_simple_date_##]</span>
-										<s_ad_div>
-											<a href="[##_s_ad_m_link_##]">수정</a>
-											<a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
-										</s_ad_div>
-									</span>
-								</div>
-							</div>
-
-							<div class="entry-content">
-								[##_article_rep_desc_##]
-							</div>
-
-							<s_tag_label>
-								<div class="tags">
-									<h2>태그</h2>
-									[##_tag_label_rep_##]
-								</div>
-							</s_tag_label>
-
-							<s_article_related>
-								<div class="related-articles">
-									<h2>관련글</h2>
-									<ul>
-										<s_article_related_rep>
-											<li>
-												<a href="[##_article_related_rep_link_##]">
-													<figure>
-														<s_article_related_rep_thumbnail>
-															<img src="//i1.daumcdn.net/thumb/C176x120/?fname=[##_article_related_rep_thumbnail_link_##]" alt="">
-														</s_article_related_rep_thumbnail>
-													</figure>
-													<span class="title">[##_article_related_rep_title_##]</span>
-												</a>
-											</li>
-										</s_article_related_rep>
-									</ul>
-								</div>
-							</s_article_related>
-
-							<div class="comments">
-									<h2>댓글<span class="count"><s_rp_count>[##_article_rep_rp_cnt_##]</s_rp_count></span></h2>
-									<s_rp>
-										<s_rp_container>
-											<div class="comment-list">
-												<ul>
-													<s_rp_rep>
-														<li>
-															<div class="author-meta">
-																<img src="[##_rp_rep_logo_##]" class="avatar" alt="">
-																<span class="nickname">[##_rp_rep_name_##]</span>
-																<span class="date">[##_rp_rep_date_##]</span>
-																<span class="control">
-																	<button type="button">더보기</button>
-																	<div class="link">
-																		<a href="[##_rp_rep_link_##]">댓글주소</a>
-																		<a href="#" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
-																	</div>
-																</span>
-															</div>
-															<p>[##_rp_rep_desc_##]<br>
-															<a href="#" onclick="[##_rp_rep_onclick_reply_##]" class="reply">답글</a></p>
-															<s_rp2_container>
-																<ul>
-																	<s_rp2_rep>
-																		<li>
-																			<div class="author-meta">
-																				<img src="[##_rp_rep_logo_##]" class="avatar" alt="">
-																				<span class="nickname">[##_rp_rep_name_##]</span>
-																				<span class="date">[##_rp_rep_date_##]</span>
-																				<span class="control">
-																					<button type="button">더보기</button>
-																					<div class="link">
-																						<a href="[##_rp_rep_link_##]">댓글주소</a>
-																						<a href="#" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
-																					</div>
-																				</span>
-																			</div>
-																			<p>[##_rp_rep_desc_##]</p>
-																		</li>
-																	</s_rp2_rep>
-																</ul>
-															</s_rp2_container>
-														</li>
-													</s_rp_rep>
-												</ul>
-											</div>
-										</s_rp_container>
-
-										<s_rp_input_form>
-											<div class="comment-form">
-												<s_rp_member>
-													<div class="field">
-														<s_rp_guest>
-															<input type="text" name="[##_rp_input_name_##]" placeholder="이름" value="[##_guest_name_##]">
-															<input type="password" name="[##_rp_input_password_##]" maxlength="8" placeholder="비밀번호" value="[##_rp_admin_check_##]">
-														</s_rp_guest>
-														<div class="secret">
-															<input type="checkbox" name="[##_rp_input_is_secret_##]" id="secret">
-															<label for="secret" tabindex="0">비밀글</label>
-														</div>
-													</div>
-												</s_rp_member>
-												<textarea name="[##_rp_input_comment_##]" cols="" rows="4" placeholder="여러분의 소중한 댓글을 입력해주세요."></textarea>
-												<div class="submit">
-													<button type="submit" class="btn" onclick="[##_rp_onclick_submit_##]">등록</button>
-												</div>
-											</div>
-										</s_rp_input_form>
-								</s_rp>
-							</div>
-						</s_permalink_article_rep>
-
-					</s_article_rep>
-
-				</div>
-
-				<s_tag>
-					<div class="post-header">
-						<h1>태그</h1>
-					</div>
-					<div class="tags">
-						<s_tag_rep>
-							<a href="[##_tag_link_##]">[##_tag_name_##]</a>
-						</s_tag_rep>
-					</div>
-				</s_tag>
-
-				<s_guest>
-					<div class="comments">
-						<div class="post-header">
-							<h1>방명록</h1>
-						</div>
-
-						<s_guest_input_form>
-							<div class="comment-form">
-								<s_guest_member>
-									<div class="field">
-										<s_guest_form>
-											<input type="text" name="[##_guest_input_name_##]" placeholder="이름" value="[##_guest_name_##]">
-											<input type="password" name="[##_guest_input_password_##]" placeholder="암호" value="[##_guest_password_##]">
-										</s_guest_form>
-									</div>
-								</s_guest_member>
-								<textarea name="[##_guest_textarea_body_##]" cols="" rows="4" placeholder="여러분의 소중한 댓글을 입력해주세요."></textarea>
-								<div class="submit">
-									<button type="submit" class="btn" onclick="[##_guest_onclick_submit_##]">등록</button>
-								</div>
-							</div>
-						</s_guest_input_form>
-
-						<s_guest_container>
-							<div class="comment-list">
-								<ul>
-									<s_guest_rep>
-										<li>
-											<div class="author-meta">
-												<img src="//t1.daumcdn.net/tistory_admin/static/skin/avatar_default.gif" class="avatar" alt="프로필사진">
-												<span class="nickname">[##_guest_rep_name_##]</span>
-												<span class="date">[##_guest_rep_date_##]</span>
-												<span class="control">
-													<button type="button">더보기</button>
-													<div class="link">
-														<a href="#" onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a>
-													</div>
-												</span>
-											</div>
-											<p>[##_guest_rep_desc_##]<br>
-											<a href="#" class="reply" onclick="[##_guest_rep_onclick_reply_##]">답변</a></p>
-											<s_guest_reply_container>
-												<ul>
-													<s_guest_reply_rep>
-														<li>
-															<div class="author-meta">
-																<img src="//t1.daumcdn.net/tistory_admin/static/skin/avatar_default.gif" class="avatar" alt="프로필사진">
-																<span class="nickname">[##_guest_rep_name_##]</span>
-																<span class="date">[##_guest_rep_date_##]</span>
-																<span class="control">
-																	<button type="button">더보기</button>
-																	<div class="link">
-																		<a href="#" onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a>
-																	</div>
-																</span>
-															</div>
-															<p>[##_guest_rep_desc_##]</p>
-														</li>
-													</s_guest_reply_rep>
-												</ul>
-											</s_guest_reply_container>
-										</li>
-									</s_guest_rep>
-								</ul>
-							</div>
-						</s_guest_container>
-					</div>
-				</s_guest>
-
-				<s_paging>
-					<div class="pagination">
-						<a [##_prev_page_##] class="prev [##_no_more_prev_##]">이전</a>
-						<s_paging_rep>
-							<a [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a>
-						</s_paging_rep>
-						<a [##_next_page_##] class="next [##_no_more_next_##]">다음</a>
-					</div>
-				</s_paging>
-
-				[##_revenue_list_lower_##]
-
-			</article>
-			<aside id="aside" class="sidebar">
-
-					<div class="sidebar-1">
-						<s_sidebar>
-							<s_sidebar_element>
-								<!-- 카테고리 -->
-								<nav class="category">
-									[##_category_list_##]
-								</nav>
-							</s_sidebar_element>
-	 					</s_sidebar>
-					</div>
-					<div class="sidebar-2">
-						<s_sidebar>
-							<s_sidebar_element>
-								<!-- 공지사항 -->
-								<s_rct_notice>
-									<div class="notice">
-										<h2>공지사항</h2>
-										<ul>
-											<s_rct_notice_rep>
-												<li><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></li>
-											</s_rct_notice_rep>
-										</ul>
-									</div>
-								</s_rct_notice>
-							</s_sidebar_element>
-							<s_sidebar_element>
-								<!-- 최근글/인기글 -->
-								<div class="post-list tab-ui">
-									<div id="recent" class="tab-list">
-										<h2>최근글</h2>
-										<ul>
-											<s_rctps_rep>
-												<li>
-													<a href="[##_rctps_rep_link_##]">
-														<s_rctps_rep_thumbnail>
-															<img src="//i1.daumcdn.net/thumb/C58x58/?fname=[##_rctps_rep_thumbnail_##]" alt="" />
-														</s_rctps_rep_thumbnail>
-														<span class="title">[##_rctps_rep_title_##]</span>
-														<span class="date">[##_rctps_rep_simple_date_##]</span>
-													</a>
-												</li>
-											</s_rctps_rep>
-										</ul>
-									</div>
-									<div id="popular" class="tab-list">
-										<h2>인기글</h2>
-										<ul>
-											<s_rctps_popular_rep>
-												<li>
-													<a href="[##_rctps_rep_link_##]">
-														<s_rctps_rep_thumbnail>
-															<img src="//i1.daumcdn.net/thumb/C58x58/?fname=[##_rctps_rep_thumbnail_##]" alt="" />
-														</s_rctps_rep_thumbnail>
-														<span class="title">[##_rctps_rep_title_##]</span>
-														<span class="date">[##_rctps_rep_simple_date_##]</span>
-													</a>
-												</li>
-											</s_rctps_popular_rep>
-										</ul>
-									</div>
-								</div>
-							</s_sidebar_element>
-							<s_sidebar_element>
-								<!-- 최근댓글 -->
-								<div class="recent-comment">
-									<h2>최근댓글</h2>
-									<ul>
-										<s_rctrp_rep>
-											<li><a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##]</a></li>
-										</s_rctrp_rep>
-									</ul>
-								</div>
-							</s_sidebar_element>
-							<s_sidebar_element>
-								<!-- Facebook/Twitter -->
-								<div class="social-list tab-ui">
-									<s_if_var_facebook-timeline>
-										<div id="facebook" class="tab-list">
-											<h2>Facebook</h2>
-											<div id="fb-root"></div>
-											<script>(function(d, s, id) {
-												var js, fjs = d.getElementsByTagName(s)[0];
-												if (d.getElementById(id)) return;
-												js = d.createElement(s); js.id = id;
-												js.src = 'https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v3.2';
-												fjs.parentNode.insertBefore(js, fjs);
-											}(document, 'script', 'facebook-jssdk'));</script>
-											<div class="fb-page" data-href="[##_var_facebook-timeline_##]" data-tabs="timeline" data-width="230" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"></div>
-										</div>
-									</s_if_var_facebook-timeline>
-									<s_if_var_twitter-timeline>
-										<div id="twitter" class="tab-list">
-											<h2>Twitter</h2>
-											<a class="twitter-timeline" data-width="230" data-height="400" href="[##_var_twitter-timeline_##]?ref_src=twsrc%5Etfw">[##_var_twitter-timeline_##]</a>
-											<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-										</div>
-									</s_if_var_twitter-timeline>
-								</div>
-							</s_sidebar_element>
-	 					</s_sidebar>
-						<s_sidebar>
-							<s_sidebar_element>
-								<!-- 태그 -->
-								<div class="tags">
-									<h2>태그</h2>
-									<s_random_tags>
-										<a href="[##_tag_link_##]">[##_tag_name_##]</a>
-									</s_random_tags>
-								</div>
-							</s_sidebar_element>
-							<s_sidebar_element>
-								<!-- 전체 방문자 -->
-								<div class="count">
-									<h2>전체 방문자</h2>
-									<p class="total">[##_count_total_##]</p>
-									<p>Today : [##_count_today_##]</p>
-									<p>Yesterday : [##_count_yesterday_##]</p>
-								</div>
-							</s_sidebar_element>
-							<s_sidebar_element>
-								<!-- 소셜 채널 -->
-								<div class="social-channel">
-									<ul>
-										<s_if_var_facebook-link><li class="facebook"><a href="[##_var_facebook-link_##]">페이스북</a></li></s_if_var_facebook-link>
-										<s_if_var_instagram-link><li class="instagram"><a href="[##_var_instagram-link_##]">인스타그램</a></li></s_if_var_instagram-link>
-										<s_if_var_twitter-link><li class="twitter"><a href="[##_var_twitter-link_##]">트위터</a></li></s_if_var_twitter-link>
-										<s_if_var_youtube-link><li class="youtube"><a href="[##_var_youtube-link_##]">유투브</a></li></s_if_var_youtube-link>
-									</ul>
-								</div>
-							</s_sidebar_element>
-	 					</s_sidebar>
-					</div>
-				</aside>
 		</div>
-	</section>
-	<hr>
-	<footer id="footer">
-		<div class="inner">
-			<div class="order-menu">
-				<s_if_var_order-link-1-title>
-					<a href="[##_var_order-link-1-url_##]">[##_var_order-link-1-title_##]</a>
-				</s_if_var_order-link-1-title>
-				<s_if_var_order-link-2-title>
-					<a href="[##_var_order-link-2-url_##]">[##_var_order-link-2-title_##]</a>
-				</s_if_var_order-link-2-title>
-				<s_if_var_order-link-3-title>
-					<a href="[##_var_order-link-3-url_##]">[##_var_order-link-3-title_##]</a>
-				</s_if_var_order-link-3-title>
-				<s_if_var_order-link-4-title>
-					<a href="[##_var_order-link-4-url_##]">[##_var_order-link-4-title_##]</a>
-				</s_if_var_order-link-4-title>
+		<!-- ****************** GNB ********************** -->
+		<!-- GNB PC  -->
+		<nav id="gnb" class="total-menu">
+			<h2 class="blind">주메뉴</h2>
+			<div id="gnbBg"></div>
+			<ul class="clearfix area">
+				<li class="gnb1">
+					<a href="./company/philosophy">랭콘 소개</a>
+					<div class="gnb-2dep">
+						<ul>
+							<li><a href="./company/philosophy"><span>Philosophy</span></a></li>
+							<li><a href="./company/intro"><span>캐릭터 소개</span></a></li>
+							<li><a href="./company/story"><span>랭콘 이야기</span></a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="gnb2">
+					<a href="./program/level_system">프로그램</a>
+					<div class="gnb-2dep">
+						<ul>
+							<li><a href="./program/level_system"><span>Level</span></a></li>
+							<li><a href="./program/curriculum"><span>Curriculum</span></a></li>
+							<li><a href="./program/textbooks"><span>Textbooks</span></a></li>
+							<li><a href="./program/homework"><span>Homework</span></a></li>
+							<li><a href="./program/assessment"><span>Assessment</span></a></li>
+							<li><a href="./program/motivation"><span>Motivation</span></a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="gnb3">
+					<a href="./admission/admission_procedure">입학 안내</a>
+					<div class="gnb-2dep">
+						<ul>
+							<li><a href="./admission/admission_procedure"><span>입학 절차</span></a></li>
+							<li><a href="./admission/level_test"><span>레벨테스트 소개</span></a></li>
+							<li><a href="https://welcome.avalon.co.kr/leveltest/bridge" target="_blank"><span>방문 레벨테스트 예약</span></a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="gnb4">
+					<a href="./contest/dream_star">영어 글쓰기 대회</a>
+					<div class="gnb-2dep">
+						<ul>
+							<li><a href="./contest/dream_star"><span>Dream Star</span></a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<!-- GNB Mobile -->
+	<button class="nav-open-btn" title="네비게이션 열기">
+		<span class="dot dot1"></span><span class="dot dot2"></span><span class="dot dot3"></span><span class="dot dot4"></span>
+		<i class="xi-close-min close-icon"></i>
+	</button>
+	<div class="gnb-overlay-bg-m"></div>
+	<nav id="gnbM" class="gnb-style-basic">
+		<h2 class="blind">Menu</h2>
+		<div class="header-util-menu-box">
+			<!-- sns 리스트 -->
+			<ul class="header-sns-box">
+				<li><a href="https://blog.naver.com/langconenglish" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145.7 66.53"><defs></defs><g id="레이어_2" data-name="레이어 2"><g id="Layer_1" data-name="Layer 1"><path class="cls-1" d="M40.45,0V11.94s5.44.9,5.44,7.78V49.55H57.16V20.1C56.24,1,40.45,0,40.45,0Z"/><path class="cls-1" d="M97.24,20.9a19.05,19.05,0,0,0-6.17-3.85,20.49,20.49,0,0,0-7.37-1.34,19.89,19.89,0,0,0-7.25,1.34,19.65,19.65,0,0,0-6.18,3.85A18.42,18.42,0,0,0,66,26.75a16.75,16.75,0,0,0,0,13.59,18.42,18.42,0,0,0,4.23,5.85A19.47,19.47,0,0,0,76.45,50a19.89,19.89,0,0,0,7.25,1.34A20.49,20.49,0,0,0,91.07,50a18.89,18.89,0,0,0,6.17-3.85,17.5,17.5,0,0,0,4.14-5.78,17.3,17.3,0,0,0,0-13.73A17.6,17.6,0,0,0,97.24,20.9ZM89.17,39a7.48,7.48,0,0,1-5.48,2.28A7.29,7.29,0,0,1,78.3,39a7.92,7.92,0,0,1,0-11,7.3,7.3,0,0,1,5.39-2.29,7.8,7.8,0,0,1,7.76,7.81A7.52,7.52,0,0,1,89.17,39Z"/><path class="cls-1" d="M22.83,15.84c-4.68.16-8.65,1-11.64,3.58h-.14V1H0V49.19H11.05V46.85h.14a16,16,0,0,0,10,3.13c4.87,0,9.34-1.38,12.26-4.67s4.36-6.39,4.36-11.82A19.31,19.31,0,0,0,33.5,21.1C31,18.22,26.83,15.71,22.83,15.84ZM24,39.07a7.46,7.46,0,0,1-5.48,2.28,7.27,7.27,0,0,1-5.38-2.28,7.93,7.93,0,0,1,0-11,7.27,7.27,0,0,1,5.38-2.28A7.46,7.46,0,0,1,24,28a7.83,7.83,0,0,1,0,11.05Z"/><path class="cls-1" d="M134.72,16.05v2.64h-.15c-2.67-2.44-5.4-3.49-9.73-3.49-4.84,0-9.07,1.61-12,5.08s-4.46,8.12-4.46,14q0,7.86,4,12.54a14.26,14.26,0,0,0,11.14,4.79c4.88,0,8.57-1.26,11.08-4.74h.15v2.25c0,5.82-6.18,8.78-10.67,8.33V66.2c5.38.77,11.78.47,16.26-3.8,3.78-3.58,5.39-8.74,5.39-17.21V16.05Zm-2.12,23a7.46,7.46,0,0,1-5.48,2.28,7.27,7.27,0,0,1-5.38-2.28,7.93,7.93,0,0,1,0-11,7.27,7.27,0,0,1,5.38-2.28A7.46,7.46,0,0,1,132.6,28a7.83,7.83,0,0,1,0,11.05Z"/></g></g></svg></a></li>
+				<li><a href="https://www.youtube.com/channel/UC5ouH4nfBUp_jTj0xPqjyNA" target="_blank"><i class="xi-youtube-play"></i></a></li>
+				<li><a href="https://www.instagram.com/avalonenglish/" target="_blank"><i class="xi-instagram"></i></a></li>
+			</ul>
+			<!-- // -->
+			<!-- 회원메뉴 -->
+			<ul class="member-menu-box">
+				<li><a href="https://welcome.avalon.co.kr/join/step01?callback=//www.langcon.co.kr/LangConSite2/">Sign Up</a></li>
+				<li><a href="./member/login">Login</a></li>
+			</ul>
+		</div>
+		<!-- // -->
+		<div class="gnb-navigation-wrapper">
+			<div class="gnb-navigation-inner">
+				<ul id="navigation" data-menu-clone="true"></ul><!-- PC메뉴 같을때 true / 같지않으면 false 후 메뉴삽입 -->
 			</div>
-			<a href="#" class="page-top">TOP</a>
-			<p class="meta"><s_if_var_footer-text-1>[##_var_footer-text-1_##]</s_if_var_footer-text-1></p>
-			<p class="copyright"><s_if_var_footer-text-2>[##_var_footer-text-2_##]</s_if_var_footer-text-2></p>
 		</div>
-	</footer>
+	</nav>
+</header>		<!-- //header -->
+
+		<!-- container -->
+		<div id="mainContainer">
+			<!-- ****************** 메인비주얼 ********************** -->
+			<section id="mainVisual" class="section">
+				<article class="main-visual-con">
+					<div class="main-visual-item first">
+						<div class="main-visual-pc-img" style="background:#fff url(./images/main/main_visual_01.jpg) no-repeat 50% 50%;"></div>
+						<div class="main-visual-m-img"><img src="./images/main/main_visual_01_m.jpg" alt="메인비주얼 모바일 이미지 1" /></div>
+						<div class="main-visual-txt-con">
+							<div class="main-visual-txt-box area-box">
+								<div class="main-visual-txt-inner">
+									<p class="main-visual-txt1">How can my kids be best at English?</p>
+									<p class="main-visual-txt2"><b>LanGCon</b> <br class="m-br">has a Solution</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main-visual-item">
+						<div class="main-visual-pc-img" style="background:#fff url(./images/main/main_visual_02.jpg) no-repeat 50% 50%;"></div>
+						<div class="main-visual-m-img"><img src="./images/main/main_visual_02_m.jpg" alt="메인비주얼 모바일 이미지 2" /></div>
+						<div class="main-visual-txt-con">
+							<div class="main-visual-txt-box area-box">
+								<div class="main-visual-txt-inner">
+									<p class="main-visual-txt1">How can my kids be best at English?</p>
+									<p class="main-visual-txt2"><b>LanGCon</b> <br class="m-br">has a Solution</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+			<!-- ****************** 메인컨텐츠 ********************** -->
+			<section id="mainContent">
+				<!-- ****************** 메인컨텐츠 1 (LanGCon Level Test) ********************** -->
+				<article id="mainLevelCon">
+					<div class="area-box">
+						<div class="main-level-tit" data-scroll><strong><b>LanGCon</b> Level Test</strong></div>
+						<div class="main-level-box" data-scroll>
+							<div class="main-level-center">
+								<div class="tit">정확한 레벨이 왜 필요 한가요?</div>
+								<ul class="list">
+									<li>
+										<span class="icon"><img src="./images/main/main_level_icon01.png" alt="이미지" /></span>
+										<p class="txt"><b>너무 쉬우면</b>흥미가 내려 갑니다.</p>
+									</li>
+									<li>
+										<span class="icon"><img src="./images/main/main_level_icon02.png" alt="이미지" /></span>
+										<p class="txt"><b>너무 어려우면</b>자신감이 내려 갑니다.</p>
+									</li>
+								</ul>
+								<p class="info">2008년부터 누적된 수많은 학생들의 <br class="m-br">성적 데이터를 기반으로 한 공신력 있는 레벨테스트</p>
+							</div>
+							<div class="main-level-right">
+								<a href="javascript:;" onclick="modalPopupOpen('#popupLevelVideo')">
+									<img src="./images/main/main_level_thum.png" alt="썸네일 이미지" />
+									<span class="icon"><img src="./images/main/icon_play.png" alt="이미지" /><span class="bg"></span></span>
+								</a>
+							</div>
+							<div class="main-level-left"><img src="./images/main/main_level_img01.png" alt="이미지" /></div>
+						</div>
+					</div>
+				</article>
+				<!-- ****************** 메인컨텐츠 2 (Scientific Level System) ********************** -->
+				<article id="mainScientificCon">
+					<div class="area-box">
+						<div class="main-tit-box">
+							<h3 class="main-tit">Scientific Level System</h3>
+						</div>
+						<div class="main-scientific-box">
+							<div class="main-scientific-left"><span class="img" data-scroll="fade-up"></span><span class="shadow" data-scroll="fade-up"></span><!-- <img src="./images/main/main_scientific_left.png" alt="왼쪽 이미지" /> --></div>
+							<div class="main-scientific-right" data-scroll>
+								<div class="main-scientific-item">
+									<span class="main-scientific-line line01"></span>
+									<span class="main-scientific-line line02"></span>
+									<div class="main-scientific-inner inner01 color-green">
+										<div class="level"><i class="xi-star"></i><i class="xi-star"></i><i class="xi-star"></i></div>
+										<div class="tit">Columbus</div>
+										<div class="txt">미국 교과 과정과 다양한 배경 지식 학습을 통한 고급 영어 실력 다지기</div>
+									</div>
+									<div class="main-scientific-inner inner02 color-blue">
+										<div class="level"><i class="xi-star"></i><i class="xi-star"></i></div>
+										<div class="tit">Ocean</div>
+										<div class="txt">새로운 커리큘럼으로 소프트 랜딩하기 위한 Bridge 레벨</div>
+									</div>
+								</div>
+								<div class="main-scientific-item">
+									<span class="main-scientific-line line03"></span>
+									<div class="main-scientific-inner inner03 color-darkblue">
+										<div class="level"><i class="xi-star"></i></div>
+										<div class="tit">Basecamp</div>
+										<div class="txt">알파벳&파닉스부터 다양한 스토리까지, 사고력과 영어 실력을 동시에</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<!-- ****************** 메인컨텐츠 3 (Language is Connected everywhere) ********************** -->
+				<article id="mainLanguageCon">
+					<div class="area-box">
+						<div class="main-tit-box scroll-object" data-scroll>
+							<h3 class="main-tit"><b>Lang</b>uage is <b>Con</b>nected everywhere</h3>
+						</div>
+						<div class="main-language-box" data-rolling-time="1600" data-reset-width="800">
+							<!-- 첫번째 2개 배열 -->
+							<div class="main-language-item main-language-item01 rolling-item">
+								<div class="main-language-item-inner item-left">
+									<span class="top-txt">In Class</span>
+									<div class="img01"><img src="./images/main/main_language_img01.png?ver=230817" alt="이미지"></div>
+								</div>
+								<div class="main-language-item-inner item-right">
+									<span class="top-txt">At home</span>
+									<div class="img01"><img src="./images/main/main_language_img02.png?ver=230817" alt="이미지"></div>
+								</div>
+							</div>
+							<!-- 파란색 시작 -->
+							<div class="main-language-item main-language-item02 rolling-item">
+								<div class="main-language-item-inner item-left">
+									<span class="top-txt">In Class</span>
+									<div class="img01"><img src="./images/main/main_language_img01.png?ver=230817" alt="이미지"></div>
+								</div>
+								<div class="main-language-item-inner item-right">
+									<span class="top-txt">At home</span>
+									<div class="img01"><img src="./images/main/main_language_img02.png?ver=230817" alt="이미지"></div>
+								</div>
+							</div>
+							<div class="main-language-item main-language-item03 rolling-item">
+								<span class="top-txt">In Class</span>
+								<div class="img01"><img src="./images/main/main_language_img01.png?ver=230817" alt="이미지"></div>
+								<div class="icon icon01"><img src="./images/main/main_language_icon01.png?ver=230817" alt="아이콘"><span>100% <br class="m-br">영어수업</span></div>
+								<div class="icon icon02"><img src="./images/main/main_language_icon02.png?ver=230817" alt="아이콘"><span>단어 Test</span></div>
+								<div class="icon icon03"><img src="./images/main/main_language_icon03.png?ver=230817" alt="아이콘"><span>액티비티</span></div>
+								<div class="icon icon04"><img src="./images/main/main_language_icon04.png?ver=230817" alt="아이콘"><span>동기부여</span></div>
+								<div class="icon icon05"><img src="./images/main/main_language_icon05.png?ver=230817" alt="아이콘"><span>배경지식</span></div>
+							</div>
+							<div class="main-language-item main-language-item04 rolling-item">
+								<span class="top-txt">In Class</span>
+								<div class="img01"><img src="./images/main/main_language_img01.png?ver=230817" alt="이미지"></div>
+								<div class="icon icon01"><img src="./images/main/main_language_icon01.png?ver=230817" alt="아이콘"><span>100% <br class="m-br">영어수업</span></div>
+								<div class="icon icon02"><img src="./images/main/main_language_icon02.png?ver=230817" alt="아이콘"><span>단어 Test</span></div>
+								<div class="icon icon03"><img src="./images/main/main_language_icon03.png?ver=230817" alt="아이콘"><span>액티비티</span></div>
+								<div class="icon icon04"><img src="./images/main/main_language_icon04.png?ver=230817" alt="아이콘"><span>동기부여</span></div>
+								<div class="icon icon05"><img src="./images/main/main_language_icon05.png?ver=230817" alt="아이콘"><span>배경지식</span></div>
+							</div>
+							<!-- 주황색 시작 -->
+							<div class="main-language-item main-language-item05 rolling-item">
+								<span class="top-txt">At home</span>
+								<div class="img01"><img src="./images/main/main_language_img02.png?ver=230817" alt="이미지"></div>
+							</div>
+							<div class="main-language-item main-language-item06 rolling-item">
+								<span class="top-txt">At home</span>
+								<div class="img01"><img src="./images/main/main_language_img02.png" alt="이미지"></div>
+								<div class="icon icon01"><img src="./images/main/main_language_icon06.png?ver=230817" alt="아이콘"><span>예습·복습</span></div>
+								<div class="icon icon02"><img src="./images/main/main_language_icon07.png?ver=230817" alt="아이콘"><span>녹음 숙제</span></div>
+								<div class="icon icon03"><img src="./images/main/main_language_icon08.png?ver=230817" alt="아이콘"><span>IBT Test</span></div>
+								<div class="icon icon04"><img src="./images/main/main_language_icon09.png?ver=230817" alt="아이콘"><span>Read aloud<br>(zoom 스피킹)</span></div>
+								<div class="icon icon05"><img src="./images/main/main_language_icon10.png?ver=230817" alt="아이콘"><span>모바일 러닝</span></div>
+							</div>
+							<div class="main-language-item main-language-item07 rolling-item">
+								<span class="top-txt">At home</span>
+								<div class="img01"><img src="./images/main/main_language_img02.png?ver=230817" alt="이미지"></div>
+								<div class="icon icon01"><img src="./images/main/main_language_icon06.png?ver=230817" alt="아이콘"><span>예습·복습</span></div>
+								<div class="icon icon02"><img src="./images/main/main_language_icon07.png?ver=230817" alt="아이콘"><span>녹음 숙제</span></div>
+								<div class="icon icon03"><img src="./images/main/main_language_icon08.png?ver=230817" alt="아이콘"><span>IBT Test</span></div>
+								<div class="icon icon04"><img src="./images/main/main_language_icon09.png?ver=230817" alt="아이콘"><span>Read aloud<br>(zoom 스피킹)</span></div>
+								<div class="icon icon05"><img src="./images/main/main_language_icon10.png?ver=230817" alt="아이콘"><span>모바일 러닝</span></div>
+							</div>
+							<!-- 마지막 2개 배열 -->
+							<div class="main-language-item main-language-item08 rolling-item">
+								<div class="main-language-item-inner item-left">
+									<span class="top-txt">In Class</span>
+									<div class="img01"><img src="./images/main/main_language_img01.png?ver=230817" alt="이미지"></div>
+									<div class="icon icon01"><img src="./images/main/main_language_icon01.png?ver=230817" alt="아이콘"><span>100% <br class="m-br">영어수업</span></div>
+									<div class="icon icon02"><img src="./images/main/main_language_icon02.png?ver=230817" alt="아이콘"><span>단어 Test</span></div>
+									<div class="icon icon03"><img src="./images/main/main_language_icon03.png?ver=230817" alt="아이콘"><span>액티비티</span></div>
+									<div class="icon icon04"><img src="./images/main/main_language_icon04.png?ver=230817" alt="아이콘"><span>동기부여</span></div>
+									<div class="icon icon05"><img src="./images/main/main_language_icon05.png?ver=230817" alt="아이콘"><span>배경지식</span></div>
+								</div>
+								<div class="main-language-item-inner item-right">
+									<span class="top-txt">At home</span>
+									<div class="img01"><img src="./images/main/main_language_img02.png?ver=230817" alt="이미지"></div>
+									<div class="icon icon01"><img src="./images/main/main_language_icon06.png?ver=230817" alt="아이콘"><span>예습·복습</span></div>
+									<div class="icon icon02"><img src="./images/main/main_language_icon07.png?ver=230817" alt="아이콘"><span>녹음 숙제</span></div>
+									<div class="icon icon03"><img src="./images/main/main_language_icon08.png?ver=230817" alt="아이콘"><span>IBT Test</span></div>
+									<div class="icon icon04"><img src="./images/main/main_language_icon09.png?ver=230817" alt="아이콘"><span>Read aloud<br>(zoom 스피킹)</span></div>
+									<div class="icon icon05"><img src="./images/main/main_language_icon10.png?ver=230817" alt="아이콘"><span>모바일 러닝</span></div>
+								</div>
+							</div>
+							<div class="main-language-item main-language-item09 rolling-item">
+								<div class="main-language-item-inner item-left">
+									<span class="top-txt">In Class</span>
+									<div class="img01"><img src="./images/main/main_language_img01.png?ver=230817" alt="이미지"></div>
+									<div class="icon icon01"><img src="./images/main/main_language_icon01.png?ver=230817" alt="아이콘"><span>100% 영어수업</span></div>
+									<div class="icon icon02"><img src="./images/main/main_language_icon02.png?ver=230817" alt="아이콘"><span>단어 Test</span></div>
+									<div class="icon icon03"><img src="./images/main/main_language_icon03.png?ver=230817" alt="아이콘"><span>액티비티</span></div>
+									<div class="icon icon04"><img src="./images/main/main_language_icon04.png?ver=230817" alt="아이콘"><span>동기부여</span></div>
+									<div class="icon icon05"><img src="./images/main/main_language_icon05.png?ver=230817" alt="아이콘"><span>배경지식</span></div>
+								</div>
+								<div class="main-language-item-inner item-right">
+									<span class="top-txt">At home</span>
+									<div class="img01"><img src="./images/main/main_language_img02.png?ver=230817" alt="이미지"></div>
+									<div class="icon icon01"><img src="./images/main/main_language_icon06.png?ver=230817" alt="아이콘"><span>예습·복습</span></div>
+									<div class="icon icon02"><img src="./images/main/main_language_icon07.png?ver=230817" alt="아이콘"><span>녹음 숙제</span></div>
+									<div class="icon icon03"><img src="./images/main/main_language_icon08.png?ver=230817" alt="아이콘"><span>IBT Test</span></div>
+									<div class="icon icon04"><img src="./images/main/main_language_icon09.png?ver=230817" alt="아이콘"><span>Read aloud<br>(zoom 스피킹)</span></div>
+									<div class="icon icon05"><img src="./images/main/main_language_icon10.png?ver=230817" alt="아이콘"><span>모바일 러닝</span></div>
+								</div>
+							</div>
+						</div>
+						<!-- 모바일 버전 -->
+						<div class="main-language-box-m">
+							<div class="main-language-item active">
+								<div class="main-language-item-inner item-left" data-scroll="fade-up">
+									<span class="top-txt">In Class</span>
+									<div class="img01"><img src="./images/main/main_language_img01.png?ver=230817" alt="이미지"></div>
+									<div class="icon icon01"><img src="./images/main/main_language_icon01.png?ver=230817" alt="아이콘"><span>100% 영어수업</span></div>
+									<div class="icon icon02"><img src="./images/main/main_language_icon02.png?ver=230817" alt="아이콘"><span>단어 Test</span></div>
+									<div class="icon icon03"><img src="./images/main/main_language_icon03.png?ver=230817" alt="아이콘"><span>액티비티</span></div>
+									<div class="icon icon04"><img src="./images/main/main_language_icon04.png?ver=230817" alt="아이콘"><span>동기부여</span></div>
+									<div class="icon icon05"><img src="./images/main/main_language_icon05.png?ver=230817" alt="아이콘"><span>배경지식</span></div>
+								</div>
+								<div class="main-language-item-inner item-right" data-scroll="fade-up">
+									<span class="top-txt">At home</span>
+									<div class="img01"><img src="./images/main/main_language_img02.png?ver=230817" alt="이미지"></div>
+									<div class="icon icon01"><img src="./images/main/main_language_icon06.png?ver=230817" alt="아이콘"><span>예습·복습</span></div>
+									<div class="icon icon02"><img src="./images/main/main_language_icon07.png?ver=230817" alt="아이콘"><span>녹음 숙제</span></div>
+									<div class="icon icon03"><img src="./images/main/main_language_icon08.png?ver=230817" alt="아이콘"><span>IBT Test</span></div>
+									<div class="icon icon04"><img src="./images/main/main_language_icon09.png?ver=230817" alt="아이콘"><span>Read aloud<br>(zoom 스피킹)</span></div>
+									<div class="icon icon05"><img src="./images/main/main_language_icon10.png?ver=230817" alt="아이콘"><span>모바일 러닝</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<!-- ****************** 메인컨텐츠 4 (Mobile Learning) ********************** -->
+				<article id="mainMobileCon">
+					<div class="area-box">
+						<div class="main-mobile-top-tit" data-scroll>
+							<span class="img01" style="background: url('./images/main/main_mobile_bg01.png') center/cover no-repeat;"></span>
+							<span class="img02" style="background: url('./images/main/main_mobile_bg02.png') center/cover no-repeat;"></span>
+							<span class="img03"><img src="./images/main/main_mobile_img.png" alt="이미지"></span>
+							<h5>Mobile Learning</h5>
+						</div>
+						<div class="main-mobile-box" data-scroll>
+							<div class="main-mobile-item big-item">
+								<a href="javascript:;" onclick="modalPopupOpen('#popupMobileLearning01')">
+									<span class="main-mobile-bg" style="background: url('./images/main/main_mobile_img01.jpg') center/cover no-repeat;"></span>
+									<div class="main-mobile-img">
+										<span style="background: url('./images/main/main_mobile_img01.jpg') center/cover no-repeat;"></span>
+									</div>
+									<div class="main-mobile-txt">
+										<div class="tit"><h5>Phonics Island</h5><span>파닉스 아일랜드</span></div>
+										<p class="txt">수업과 연계된 프로그램으로 예습·복습하며, <br class="pc-br">게임 방식으로 즐겁고 신나게 Phonics를 익히고 강화할 수 있어요.</p>
+									</div>
+									<span class="main-mobile-btn"><img src="./images/main/icon_play.png" alt="이미지" /><span class="bg"></span></span>
+								</a>
+								<div class="main-mobile-txt-m">
+									<p class="txt">수업과 연계된 프로그램으로 예습·복습하며, <br class="pc-br">게임 방식으로 즐겁고 신나게 Phonics를 익히고 강화할 수 있어요.</p>
+								</div>
+							</div>
+							<div class="main-mobile-item big-item">
+								<a href="javascript:;" onclick="modalPopupOpen('#popupMobileLearning02')">
+									<span class="main-mobile-bg" style="background: url('./images/main/main_mobile_img02.jpg') center/cover no-repeat;"></span>
+									<div class="main-mobile-img">
+										<span style="background: url('./images/main/main_mobile_img02.jpg') center/cover no-repeat;"></span>
+									</div>
+									<div class="main-mobile-txt">
+										<div class="tit"><h5>LanGCon Island</h5><span>랭콘 아일랜드</span></div>
+										<p class="txt">수업과 연계된 프로그램으로 예습·복습하며, <br class="pc-br">내가 주인공이 되어 특정 테마 속에서 스토리를 진행하는 게임 방식으로 <br class="pc-br">언어 습득에 필요한 6가지 영역을 자연스럽게 익히고 강화할 수 있어요.</p>
+									</div>
+									<span class="main-mobile-btn"><img src="./images/main/icon_play.png" alt="이미지" /><span class="bg"></span></span>
+								</a>
+								<div class="main-mobile-txt-m">
+									<p class="txt">수업과 연계된 프로그램으로 예습·복습하며, 내가 주인공이 되어 특정 테마 속에서 <br class="pc-br">스토리를 진행하는 게임 방식으로 언어 습득에 필요한 6가지 영역을 <br class="pc-br">자연스럽게 익히고 강화할 수 있어요.</p>
+								</div>
+							</div>
+							<div class="main-mobile-item">
+								<a href="javascript:;" onclick="modalPopupOpen('#popupMobileLearning03')">
+									<span class="main-mobile-bg" style="background: url('./images/main/main_mobile_img03.jpg') center/cover no-repeat;"></span>
+									<div class="main-mobile-img">
+										<span style="background: url('./images/main/main_mobile_img03.jpg') center/cover no-repeat;"></span>
+									</div>
+									<div class="main-mobile-txt">
+										<div class="tit"><h5>Avalon Readers</h5><span>아발론 리더스</span></div>
+										<p class="txt">레벨에 맞는 다양한 장르의 도서를 읽고, <br class="pc-br">Book Quiz 풀기와 Book Report 작성을 통해 <br class="pc-br">책 읽는 습관부터 Writing 실력까지 강화할 수 있어요.</p>
+									</div>
+									<span class="main-mobile-btn"><img src="./images/main/icon_play.png" alt="이미지" /><span class="bg"></span></span>
+								</a>
+								<div class="main-mobile-txt-m">
+									<p class="txt">레벨에 맞는 다양한 장르의 도서를 읽고, <br class="pc-br">Book Quiz 풀기와 Book Report 작성을 통해 <br class="pc-br">책 읽는 습관부터 Writing 실력까지 강화할 수 있어요.</p>
+								</div>
+							</div>
+							<div class="main-mobile-item">
+								<a href="javascript:;" onclick="modalPopupOpen('#popupMobileLearning04')">
+									<span class="main-mobile-bg" style="background: url('./images/main/main_mobile_img04.jpg') center/cover no-repeat;"></span>
+									<div class="main-mobile-img">
+										<span style="background: url('./images/main/main_mobile_img04.jpg') center/cover no-repeat;"></span>
+									</div>
+									<div class="main-mobile-txt">
+										<div class="tit"><h5>MVA</h5><span>[Match of Vitamin·Avocado]  엠바</span></div>
+										<p class="txt">내 손안에 단어장으로 언제·어디서나 단어 학습!<br class="pc-br">
+										배운 단어를 학습하고 테스트로 점검, <br class="pc-br">
+										친구&AI와의 Match게임으로 어휘력을 키우고<br class="pc-br">
+										획득한 별과 트로피로 나만의 캐릭터도 꾸며봐요. 
+										</p>
+									</div>
+									<span class="main-mobile-btn"><img src="./images/main/icon_play.png" alt="이미지" /><span class="bg"></span></span>
+								</a>
+								<div class="main-mobile-txt-m">
+									<p class="txt">내 손안에 단어장으로 언제·어디서나 단어 학습!<br class="pc-br">
+										배운 단어를 학습하고 테스트로 점검, <br class="pc-br">
+										친구&AI와의 Match게임으로 어휘력을 키우고<br class="pc-br">
+										획득한 별과 트로피로 나만의 캐릭터도 꾸며봐요. </p>
+								</div>
+							</div>
+							<div class="main-mobile-item">
+								<a href="javascript:;" onclick="modalPopupOpen('#popupMobileLearning05')">
+									<span class="main-mobile-bg" style="background: url('./images/main/main_mobile_img05.jpg') center/cover no-repeat;"></span>
+									<div class="main-mobile-img">
+										<span style="background: url('./images/main/main_mobile_img05.jpg') center/cover no-repeat;"></span>
+									</div>
+									<div class="main-mobile-txt">
+										<div class="tit"><h5>유형학습</h5><span>수능 영어</span></div>
+										<p class="txt">1만개 이상의 수능/모의·학력평가 문제를 <br class="pc-br">
+										유형별로 제한 없이 마음껏 풀어보고,<br class="pc-br">
+										취약 유형만 골라서 학습하며 수능을 대비할 수 있어요.
+										</p>
+									</div>
+									<span class="main-mobile-btn"><img src="./images/main/icon_play.png" alt="이미지" /><span class="bg"></span></span>
+								</a>
+								<div class="main-mobile-txt-m">
+									<p class="txt">1만개 이상의 수능/모의·학력평가 문제를 <br class="pc-br">
+										유형별로 제한 없이 마음껏 풀어보고,<br class="pc-br">
+										취약 유형만 골라서 학습하며 수능을 대비할 수 있어요.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<!-- ****************** 메인컨텐츠 5 (Banner) ********************** -->
+				<article id="mainBannerCon" data-scroll>
+					<div class="area-box">
+						<div class="main-banner-txt">
+							<h5>Why LanGCon English?</h5>
+							<p>Balanced Curriculum</p>
+						</div>
+					</div>
+					<div class="main-banner-img"><img src="./images/main/main_banner_img.png" alt="이미지"></div>
+				</article>
+				<!-- ****************** 메인컨텐츠 6 (Classification) ********************** -->
+				<article id="mainClassificationCon">
+					<div class="area-box">
+						<div class="main-classification-box" data-scroll>
+							<div class="main-classification-item item01">
+								<div class="main-classification-icon"><span style="background: url('./images/main/main_classification_icon01.png') center/auto no-repeat;"></span></div>
+								<div class="main-classification-txt">
+									<h5>Speaking</h5>
+									<p>원어민과의 자신감 있는 일상대화부터 <br class="pc-br">영어 토론까지</p>
+								</div>
+							</div>
+							<div class="main-classification-item item02">
+								<div class="main-classification-icon"><span style="background: url('./images/main/main_classification_icon02.png') center/auto no-repeat;"></span></div>
+								<div class="main-classification-txt">
+									<h5>Writing</h5>
+									<p>간단한 영어 편지부터 <br class="pc-br">자신의 생각을 논리적으로 써보는 에세이까지</p>
+								</div>
+							</div>
+							<div class="main-classification-item item03">
+								<div class="main-classification-icon"><span style="background: url('./images/main/main_classification_icon03.png') center/auto no-repeat;"></span></div>
+								<div class="main-classification-txt">
+									<h5>Culture</h5>
+									<p>영어로 배우는 다양한 배경지식을 통한 문해력 강화</p>
+								</div>
+							</div>
+							<div class="main-classification-item item04">
+								<div class="main-classification-icon"><span style="background: url('./images/main/main_classification_icon04.png') center/auto no-repeat;"></span></div>
+								<div class="main-classification-txt">
+									<h5>Listening</h5>
+									<p>반복적인 듣기와 딕테이션 훈련으로 듣기 실력 강화</p>
+								</div>
+							</div>
+							<div class="main-classification-item item05">
+								<div class="main-classification-icon"><span style="background: url('./images/main/main_classification_icon05.png') center/auto no-repeat;"></span></div>
+								<div class="main-classification-txt">
+									<h5>Reading</h5>
+									<p>미국교과서와 다양한 컨텐츠 교재, <br class="pc-br">영어 독서 프로그램을 통한 다독으로 독해력 강화</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-classification-btn pc-ver" data-scroll="fade-up">
+							<a href="/program/curriculum">Detail View</a>
+						</div>
+						<ul class="main-classification-txt-list-m" data-scroll>
+							<li>
+								<h5>Speaking</h5>
+								<p>원어민과의 자신감 있는 일상대화부터 <br class="pc-br">영어 토론까지</p>
+							</li>
+							<li>
+								<h5>Writing</h5>
+								<p>간단한 영어 편지부터 <br class="pc-br">자신의 생각을 논리적으로 써보는 에세이까지</p>
+							</li>
+							<li>
+								<h5>Culture</h5>
+								<p>영어로 배우는 다양한 배경지식을 통한 문해력 강화</p>
+							</li>
+							<li>
+								<h5>Listening</h5>
+								<p>반복적인 듣기와 딕테이션 훈련으로 듣기 실력 강화</p>
+							</li>
+							<li>
+								<h5>Reading</h5>
+								<p>미국교과서와 다양한 컨텐츠 교재, <br class="pc-br">영어 독서 프로그램을 통한 다독으로 독해력 강화</p>
+							</li>
+						</ul>
+						<div class="main-classification-btn m-ver">
+							<a href="/program/curriculum">Detail View</a>
+						</div>
+					</div>
+				</article>
+				<!-- ****************** 메인컨텐츠 7 (Banner02) ********************** -->
+				<article id="mainBanner02Con">
+					<div class="area-box">
+						<div class="main-banner02-box" data-scroll="fade-up">
+							<div class="bg"></div>
+							<h5 class="txt01">“ Excellence in Teaching ”</h5>
+							<p class="txt02">랭콘의 관리는 <b>왜</b> 특별할까요?</p>
+							<p class="txt03">학생 개개인의 성향과 학습 성과에 따른 맞춤 케어로 <br class="m-br">학습 방향을 결정하고, <br class="pc-br">학부모와의 정기적인 <br class="m-br">상담을 통해  아이의 성취도와 앞으로의 <br class="m-br">영어 로드맵을 안내합니다.</p>
+							<span class="img" data-scroll="fade-up"><img src="./images/main/main_banner02_img.png" alt="이미지"></span>
+						</div>
+					</div>
+				</article>
+				<!-- ****************** 메인컨텐츠 8 (Never stop learning) ********************** -->
+				<article id="mainNeverCon">
+					<div class="area-box">
+						<div class="main-tit-box scroll-object" data-scroll>
+							<h3 class="main-tit">Never stop learning  to become <b>a better teacher</b></h3>
+						</div>
+						<div class="main-never-wrapper" data-scroll>
+							<ul class="main-never-list grid clearfix" id="gridList">
+								<li class="main-never-item grid-sizer"></li>
+								<li class="main-never-item grid-item item01">
+									<div class="main-never-img"><span style="background: url('./images/main/main_never_img01.png') center/cover no-repeat;"></span></div>
+									<div class="main-never-txt">
+										<h5>Workshop</h5>
+										<p>주제별 워크샵을 통해 강점은 공유, 약점은 극복</p>
+									</div>
+								</li>
+								<li class="main-never-item grid-item item02">
+									<div class="main-never-img"><span style="background: url('./images/main/main_never_img02.png') center/cover no-repeat;"></span></div>
+									<div class="main-never-txt">
+										<h5>Zoom Training</h5>
+										<p>아이들의 안전을 위한 화재/교통 안전 교육 등 <br class="pc-br">Zoom을 통한 시간과 장소의 제약 없는 직원 교육</p>
+									</div>
+								</li>
+								<li class="main-never-item grid-item item03">
+									<div class="main-never-img"><span style="background: url('./images/main/main_never_img03.png') center/cover no-repeat;"></span></div>
+									<div class="main-never-txt">
+										<h5>Conference</h5>
+										<p>정기 컨퍼런스를 통한 전 직원 대면 교육</p>
+									</div>
+								</li>
+								<li class="main-never-item grid-item item05">
+									<div class="main-never-img"><span style="background: url('./images/main/main_never_img05.png') center/cover no-repeat;"></span></div>
+									<div class="main-never-txt">
+										<h5>AL-Tutor<span>Online Education System</span></h5>
+										<p>사내 인트라넷을 통한 섹션별, 주제별 다양한 교육 영상</p>
+									</div>
+								</li>
+								<li class="main-never-item grid-item item04">
+									<div class="main-never-img"><span style="background: url('./images/main/main_never_img04.png') center/cover no-repeat;"></span></div>
+									<div class="main-never-txt">
+										<h5>Meeting</h5>
+										<p>꼼꼼한 학생 관리를 위한 데일리 미팅</p>
+									</div>
+								</li>
+								<li class="main-never-item grid-item item06">
+									<div class="main-never-img"><span style="background: url('./images/main/main_never_img06.png') center/cover no-repeat;"></span></div>
+									<div class="main-never-txt">
+										<h5>Cross-Observation</h5>
+										<p>청강과 피드백을 통한 강의력 강화</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+				<!-- ****************** 메인컨텐츠 9 (Happy campus life!) ********************** -->
+				<article id="mainHappyCon">
+					<div class="area-box">
+						<div class="main-happy-box">
+							<div class="main-happy-top">
+								<span class="img01" data-scroll="fade-up"><img src="./images/main/main_happy_top_img01.png" alt="이미지"></span>
+								<span class="img02" data-scroll="fade-up"><img src="./images/main/main_happy_top_img02.png" alt="이미지"></span>
+								<h5 class="tit">Happy Campus Life</h5>
+							</div>
+							<ul class="main-happy-list" data-scroll scroll-offset="100%">
+								<li class="main-happy-item">
+									<a href="javascript:fnwindow('/event/langcon_festival', '1400', '807', 'yes');">
+										<div class="main-happy-img"><img src="./images/main/main_happy_img01.png" alt="이미지"></div>
+										<p class="main-happy-txt">LanGCon Festival</p>
+									</a>
+								</li>
+								<li class="main-happy-item">
+									<a href="javascript:fnwindow('/event/certificate_party', '1400', '840', 'yes');" >
+										<div class="main-happy-img"><img src="./images/main/main_happy_img02.png" alt="이미지"></div>
+										<p class="main-happy-txt">Certificate Party</p>
+									</a>
+								</li>
+								<li class="main-happy-item">
+									<a href="javascript:fnwindow('/event/halloween_day', '1400', '840', 'yes');">
+										<div class="main-happy-img"><img src="./images/main/main_happy_img03.png" alt="이미지"></div>
+										<p class="main-happy-txt">Halloween Day</p>
+									</a>
+								</li>
+								<li class="main-happy-item">
+									<a href="javascript:fnwindow('/event/christmas', '1400', '840', 'yes');">
+										<div class="main-happy-img"><img src="./images/main/main_happy_img04.png" alt="이미지"></div>
+										<p class="main-happy-txt">Christmas</p>
+									</a>
+								</li>
+								<li class="main-happy-item">
+									<a href="javascript:fnwindow('/event/childrens_day', '1400', '840', 'yes');">
+										<div class="main-happy-img"><img src="./images/main/main_happy_img05.png" alt="이미지"></div>
+										<p class="main-happy-txt">Children's Day</p>
+									</a>
+								</li>
+								<li class="main-happy-item">
+									<a href="javascript:fnwindow('/event/al_bee_match', '1400', '840', 'yes');">
+										<div class="main-happy-img"><img src="./images/main/main_happy_img06.png" alt="이미지"></div>
+										<p class="main-happy-txt">AL Bee Match<br><span>(알비매치)</span></p>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+			</section>
+			<!-- ****************** 퀵메뉴 ********************** -->
+			<aside id="rightBar">
+				<span class="scroll-icon"><img src="./images/main/scroll_icon.png" alt="스크롤 아이콘"></span>
+				<ul>
+					<li><a href="https://welcome.avalon.co.kr/leveltest/bridge" target="_blank"><i class="xi-crown"></i><span>Level Test</span><em>레벨<br>테스트</em></a></li>
+					<li><a href="/campus/campus_search"><i class="xi-bank"></i><span>Campus Search</span><em>캠퍼스<br>찾기</em></a></li>
+				</ul>
+			</aside>
+		</div>
+		<!-- //container -->
+		<!-- footer -->
+<article id="bottomInfoBox">
+	<div class="area-box">
+		<ul class="info-list">
+			<li>가맹문의</li>
+			<li>캠퍼스 관련 문의</li>
+			<li>온라인 학습 지원</li>
+		</ul>
+		<h5 class="tel">1577-0502</h5>
+		<p class="time">평일 13:00~20:00  &nbsp | &nbsp 주말·공휴일 휴무</p>
+	</div>
+</article>
+<footer id="footer">
+	<!-- 푸터 상단 -->
+	<article id="footerTop">
+		<div class="area-box clearfix">
+			<button class="to-top-btn"><em class="blind">TOP</em><img src="/images/common/to_top_icon.png" alt="아이콘"></button>
+			<!-- 푸터상단 왼쪽 -->
+			<div class="footer-left-con">
+				<div class="foot-logo-menu-box">
+					<span class="foot-logo"><img src="/images/common/footer_logo.png" alt="랭콘" /></span>
+					<ul class="foot-menu clearfix">
+						<li><a href="http://www.avalon.co.kr/AVA_2008/pop_new/pop_companynoti.html" target="_blank"> 회사소개</a></li>
+						<li><a href="javascript:;" onclick="modalPopupOpen('#popupAgreement')">이용약관</a></li>
+						<li><a href="javascript:;" onclick="modalPopupOpen('#popupRegulation')">학칙</a></li>
+						<li><a href="javascript:;" onclick="modalPopupOpen('#popupPrivacy')"><b>개인정보처리방침</b></a></li>
+						<li><a href="javascript:;" onclick="modalPopupOpen('#popupLocation')">위치정보처리방침</a></li>
+						<li><a href="https://recruit.avalon.co.kr/recruit/main" target="_blank">채용정보</a></li>
+					</ul>
+				</div>
+				<div class="footer-address-info-box">
+					<div class="footer-address-list">
+						<dl>
+							<dt>회사명</dt>
+							<dd>㈜아발론교육</dd>
+						</dl>
+						<dl>
+							<dt>대표이사</dt>
+							<dd>김명기</dd>
+						</dl>
+						<dl>
+							<dt>호스팅 제공자</dt>
+							<dd>(주)아발론교육</dd>
+						</dl>
+					</div>
+					<div class="footer-address-list">
+						<dl>
+							<dt>사업자 등록번호</dt>
+							<dd>129-81-60929 <a href="javascript:;" onclick="window.open('http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=1298160929','','width=750,height=700,scrollbars=yes');" class="btn">사업자정보 확인</a></dd>
+						</dl>
+						<dl>
+							<dt>통신판매업신고</dt>
+							<dd>2006-경기성남-0170</dd>
+						</dl>
+					</div>
+					<div class="footer-address-list">
+						<dl>
+							<dt>이메일</dt>
+							<dd><a href="mailto:webmaster@giantsoft.co.kr">LCmaster@avalon.co.kr</a></dd>
+						</dl>
+						<dl>
+							<dt>본사주소</dt>
+							<dd>경기도 성남시 분당구 성남대로 389, 폴라리스Ⅱ 8층</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!-- 푸터상단 오른쪽 -->
+			<div class="footer-right-con">
+				<ul class="footer-sns-list">
+					<li><a href="https://m.blog.naver.com/PostList.naver?blogId=langconenglish" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145.7 66.53"><defs></defs><g id="레이어_2" data-name="레이어 2"><g id="Layer_1" data-name="Layer 1"><path class="cls-1" d="M40.45,0V11.94s5.44.9,5.44,7.78V49.55H57.16V20.1C56.24,1,40.45,0,40.45,0Z"/><path class="cls-1" d="M97.24,20.9a19.05,19.05,0,0,0-6.17-3.85,20.49,20.49,0,0,0-7.37-1.34,19.89,19.89,0,0,0-7.25,1.34,19.65,19.65,0,0,0-6.18,3.85A18.42,18.42,0,0,0,66,26.75a16.75,16.75,0,0,0,0,13.59,18.42,18.42,0,0,0,4.23,5.85A19.47,19.47,0,0,0,76.45,50a19.89,19.89,0,0,0,7.25,1.34A20.49,20.49,0,0,0,91.07,50a18.89,18.89,0,0,0,6.17-3.85,17.5,17.5,0,0,0,4.14-5.78,17.3,17.3,0,0,0,0-13.73A17.6,17.6,0,0,0,97.24,20.9ZM89.17,39a7.48,7.48,0,0,1-5.48,2.28A7.29,7.29,0,0,1,78.3,39a7.92,7.92,0,0,1,0-11,7.3,7.3,0,0,1,5.39-2.29,7.8,7.8,0,0,1,7.76,7.81A7.52,7.52,0,0,1,89.17,39Z"/><path class="cls-1" d="M22.83,15.84c-4.68.16-8.65,1-11.64,3.58h-.14V1H0V49.19H11.05V46.85h.14a16,16,0,0,0,10,3.13c4.87,0,9.34-1.38,12.26-4.67s4.36-6.39,4.36-11.82A19.31,19.31,0,0,0,33.5,21.1C31,18.22,26.83,15.71,22.83,15.84ZM24,39.07a7.46,7.46,0,0,1-5.48,2.28,7.27,7.27,0,0,1-5.38-2.28,7.93,7.93,0,0,1,0-11,7.27,7.27,0,0,1,5.38-2.28A7.46,7.46,0,0,1,24,28a7.83,7.83,0,0,1,0,11.05Z"/><path class="cls-1" d="M134.72,16.05v2.64h-.15c-2.67-2.44-5.4-3.49-9.73-3.49-4.84,0-9.07,1.61-12,5.08s-4.46,8.12-4.46,14q0,7.86,4,12.54a14.26,14.26,0,0,0,11.14,4.79c4.88,0,8.57-1.26,11.08-4.74h.15v2.25c0,5.82-6.18,8.78-10.67,8.33V66.2c5.38.77,11.78.47,16.26-3.8,3.78-3.58,5.39-8.74,5.39-17.21V16.05Zm-2.12,23a7.46,7.46,0,0,1-5.48,2.28,7.27,7.27,0,0,1-5.38-2.28,7.93,7.93,0,0,1,0-11,7.27,7.27,0,0,1,5.38-2.28A7.46,7.46,0,0,1,132.6,28a7.83,7.83,0,0,1,0,11.05Z"/></g></g></svg></a></li>
+					<li><a href="https://www.youtube.com/channel/UC5ouH4nfBUp_jTj0xPqjyNA" target="_blank"><i class="xi-youtube-play"></i></a></li>
+					<li><a href="https://www.instagram.com/avalonenglish/" target="_blank"><i class="xi-instagram"></i></a></li>
+				</ul>
+				<div class="footer-copyright">Copyright AVALON Corp. All rights reserved</div>
+			</div>
+		</div>
+	</article>
+	<!-- 푸터 하단 -->
+	<article id="footerBottom">
+		<div class="area-box clearfix">
+			<!-- 푸터 하단 왼쪽 -->
+			<article class="footer-left-con">
+				<p class="foot-info-txt01">국민은행 채무지급보증안내 <a href="javascript:;" onclick="window.open('/popup/avalon_kb.html','Pre','width=690,height=948,scrollbars=yes,toolbar=no');">서비스 가입사실 확인</a></p>
+				<p class="foot-info-txt02">당사는 고객님이 5만 원 이상 현금등으로 결제한 금액에 대해 국민은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.</p>
+			</article>
+			<!-- 푸터 하단 오른쪽 -->
+			<article class="footer-right-con">
+				<ul class="foot-award-list clearfix">
+					<li><img src="/images/common/foot_award_img01.jpg" alt="한국소비자 평가 최고의 브랜드대상"></li>
+					<li><img src="/images/common/foot_award_img02.jpg" alt="2017,2018 소비자의 선택 대상"></li>
+					<li><img src="/images/common/foot_award_img03.jpg" alt="2022 대한민국 경영대상 고객가치경영 대상"></li>
+				</ul>
+			</article>
+		</div>
+	</article>
+</footer>
+
+<!-- 가이드라인(퍼블리싱 후 삭제) -->
+<!-- <div id="grid">
+	<div class="area-box"></div>
+	<div class="area"></div>
+	<style type="text/css">
+	#grid{position:fixed; top:0; left:0; width:100%; z-index:111;}
+	#grid .area-box,
+	#grid .area{position:relative; }
+	#grid .area-box:before,
+	#grid .area-box:after,
+	#grid .area:before,
+	#grid .area:after{position:absolute; top:0px; left:0; bottom:0px; width:1px; height:100vh; content:""; background-color:#4affff;}
+	#grid .area-box:after,
+	#grid .area:after{left:auto; right:0;}
+	#grid .area:before,
+	#grid .area:after{background-color:#ff00f6}
+	@media all and (max-width:1660px){
+		#grid .area-box:before{left:var(--area-padding);}
+		#grid .area-box:after{right:var(--area-padding);}
+	}
+	@media all and (max-width:1460px){
+		#grid .area:before{left:var(--area-padding);}
+		#grid .area:after{right:var(--area-padding);}
+	}
+	</style>
+</div> -->
+<!-- // -->
+
+<!-- 팝업내용 :: 이용약관 -->
+<div class="modal-fixed-pop-wrapper layer-popup" id="popupAgreement">
+	<div class="modal-fixed-pop-inner">
+		<div class="modal-inner-box">
+			<div class="modal-inner-content">
+				<section class="footer-modal-content">
+					<button title="팝업 닫기" class="modal-close-btn"  onclick="modalPopupClose('#popupAgreement')"><i class="xi-close-thin"></i></button>
+					<h1>이용약관</h1>
+					<div class="footer-inner-box">
+						<div class="footer-inner">
+							<h4>제 1 조 (목적)</h4>
+		<p>본 약관은 ㈜아발론교육(이하 "회사")의 웹사이트를 통하여 제공하는 교육정보서비스(이하 "서비스")의 이용과 관련하여 회사와 회원간의 권리∙의무 및 책임사항 과 기타 필요한 사항을 규정함을 목적으로 합니다.</p>
+		<h4>제 2 조 (정의)</h4>
+		<p>① 본 약관에서 사용하는 용어의 정의는 다음과 같습니다.</p>
+    	<ul>
+        	<li>가. "학부모회원" 및 "학생회원" 이라 함은 회사의 웹사이트에 접속하여 본 약관에 동의함으로써 회사와 이용계약을 체결하고 아이디(ID)를 부여받은 자로서 회사가 제공하는 정보와 서비스를 지속적으로 이용할 수 있는 자를 말합니다.</li>
+            <li>나. "서비스"라 함은 회사가 제공하는 온라인상의 정보 제공 서비스를 의미합니다.</li>
+            <li>다. "아이디(ID)"라 함은 회원의 식별 및 서비스 이용을 위하여 회원이 정하고 회사가 승인하는 문자 또는 숫자의 조합을 말합니다.</li>
+            <li>라. "비밀번호"라 함은 회원이 부여 받은 아이디(ID)와 일치된 회원임을 확인하고 회원 개인정보 보호를 위하여 회원 자신이 정한 문자 또는 숫자의 조합을 말합니다.</li>
+            <li>마. "운영자(관리자)"라 함은 서비스의 전반적인 관리와 원활한 운영을 위하여 회사에서 선정한 사람을 말합니다.</li>
+            <li>바. "전자우편(Email)"이라 함은 인터넷을 통한 우편 혹은 전기적 매체를 이용한 우편을 말합니다.</li>
+            <li>사. "게시물"이라 함은 회사의 웹사이트에 회원이 올린 글, 이미지, 각종 파일 및 링크, 각종 덧글 등의 말합니다.</li>
+            <li>아. "상품권"이라 함은 아발론교육 또는 랭콘잉글리쉬 재원생에게 서비스금액으로 발행되어 아발론교육 또는 랭콘잉글리쉬 내에서 사용 가능한 상품교환권을 말합니다.</li>
+            <li>자. "해지"라 함은 회사와 회원간 서비스 이용계약 체결 이후에 이용계약을 종료시키는 의사표시를 말합니다.</li>
+        </ul>
+        <p class="mat10">② 본 약관에서 사용하는 용어 중 전항 각호에서 정하지 아니한 것은 거래 관행 및 관계법령에서 정하는 바에 따릅니다.</p>
+    
+		<h4>제 3 조 (약관의 게시와 개정)</h4>
+        <ul>
+			<li>① 회사는 회원이 별도의 연결화면을 통하여 본 약관을 확인할 수 있도록 회사 웹사이트에 게시하고 있습니다.</li>
+			<li>② 회사는 『정보통신망 이용촉진 및 정보보호 등에 관한 법률』(이하 "정보통신망법"), 『약관의 규제에 관한 법률』(이하 "약관법") 등 관계법령을 위배하지 않는 범위에서 본 약관을 개정할 수 있습니다.</li>
+			<li>③ 회사가 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여, 개정 전 약관과 함께 개정약관 적용일 14일전부터 회사 웹사이트에서 확인할 수 있도록 게시합니다. 다만, 회원에게 불리한 약관의 개정의 경우에는 공지 외에 일정기간 서비스내 전자우편, 로그인시 동의창 등의 전자적 수단을 통해 따로 명확히 통지하도록 합니다.</li>
+			<li>④ 회사가 전항에 따라 개정약관을 공지 또는 통지하면서 회원에게 14일 기간 내에 의사표시를 하지 않으면 의사표시가 표명된 것으로 본다는 뜻을 명확하게 공지 또는 통지하였음에도 회원이 명시적으로 거부의 의사표시를 하지 아니한 경우 회원이 개정약관에 동의한 것으로 봅니다.</li>
+            <li>⑤ 회원이 개정약관의 적용에 동의하지 않는 경우 회사는 개정약관의 내용을 적용할 수 없으며, 이 경우 회원은 서비스 이용을 중단하고 회원탈퇴를 할 수 있습니다.</li>
+        </ul>
+
+		<h4>제 4 조 (약관의 효력)</h4>
+        <ul>
+        	<li>① 본 약관은 가입신청자가 약관의 내용에 동의하며 회원가입을 신청하고, 회사가 그 신청에 대하여 승낙함으로써 효력이 발생합니다.</li>
+            <li>② 본 약관에 명시되지 않은 사항과 본 약관의 해석에 대해서는 관계법령 또는 상관례에 따릅니다.</li>
+        </ul>
+
+		<h4>제 5 조 (회원에 대한 통지)</h4> 
+        <ul>
+        	<li>① 회사는 회원에게 알려야 할 사항이 발생하는 경우, 회원가입 시 회원이 제공한 전자우편주소, 팝업창, 유∙무선 등의 방법으로 통지할 수 있습니다.</li>
+            <li>② 회사는 회원 전체에 대한 통지의 경우, 14일 이상 회사 웹사이트 게시판에 게시함으로써 전항의 통지에 갈음할 수 있습니다.</li>
+        </ul>
+
+		<h3>제 2 장 (서비스 이용계약)</h3>
+		<h4>제 6 조 (이용계약 체결)</h4>
+        <ul>
+        	<li>① 만 14세 미만 아동의 보호자[법정대리인](이하 "가입신청자")가 본 약관의 내용에 대하여 동의를 한 후에 가입신청자 본인 및 해당 자녀의 회원가입신청을 하여야 하며, 회사가 이러한 신청에 대하여 승낙함으로써 이용계약이 체결됩니다.</li>
+            <li>② 회사는 전항에 따라 가입신청자가 온라인 회원가입 신청양식에 기재하는 모든 개인정보를 실제 데이터인 것으로 간주합니다.</li>
+            <li>③ 실명이나 실제 정보를 입력하지 않은 회원은 법적인 보호를 받을 수 없으며, 본 약관의 관련 규정에 따라 서비스 사용에 제한을 받을 수 있습니다.</li>
+            <li>④ 만 14세 미만 회원의 보호자[법정대리인]는 자녀에 대한 개인정보의 열람, 정정, 갱신을 요구하거나 회원가입에 대한 동의를 철회할 수 있으며, 이러한 경우에 회사는 지체 없이 필요한 조치를 취해야 합니다. 이때 회사는 보호자[법정대리인]임을 입증할 수 있는 문서 등의 확인서류 제출을 요청할 수 있습니다.</li>
+			<li>⑤ 회사는 본조 제1항에 따른 가입신청자의 신청에 대하여 회원가입을 승낙함을 원칙으로 합니다. 다만, 회사는 다음 각 호에 해당하는 신청에 대하여는 승낙을 하지 않을 수 있으며, 승낙 이후라도 취소할 수 있습니다.
+				<ul>
+                	<li>가. 가입신청자의 귀책사유로 인하여 승인이 불가능한 경우</li> 
+					<li>나. 실명을 사용하지 않은 경우</li> 
+					<li>다. 타인의 명의 또는 개인정보를 도용하는 경우</li>
+					<li>라. 허위의 정보를 제공하는 경우</li> 
+					<li>마. 중복된 아이디 또는 주민등록번호를 사용하는 경우</li> 
+					<li>바. 회사가 제시하는 회원가입 신청양식에 관련 내용을 기재하지 않은 경우</li> 
+					<li>사. 이전에 회사 이용약관 또는 관계법령을 위반하여 회원자격이 상실되었던 경우</li>
+					<li>아. 본 약관 제11조 (회원의 의무)를 위반하는 경우</li> 
+					<li>자. 기타 본 약관 및 관계법령을 위반하는 경우 </li>
+					<li>차. 회원가입 신청양식에 기재되어 회사에 제공되는 개인정보(ID, 비밀번호, 주소 등)가 선량한 풍속 기타 사회질서에 위배되거나 타인을 모욕하는 경우</li>
+					<li>카. 회원가입 신청양식에 기재되어 회사에 제공되는 아이디(ID) 등이 회사 및 회사의 운영자로 오인할 우려가 있는 경우</li>
+                </ul>
+            </li>
+            <li>⑥ 회사는 서비스 관련 설비의 여유가 없거나, 기술상 또는 업무상 문제가 있는 경우에는 승낙을 유보할 수 있습니다.</li> 
+			<li>⑦ 회사가 본조 제4항과 제5항에 따라 회원가입신청의 승낙을 하지 아니하거나 유보한 경우에는 가입신청자에게 알리도록 합니다. 단, 회사의 귀책사유 없이 가입신청자에게 알릴 수 없는 경우에는 예외로 합니다.</li>
+			<li>⑧ 회원가입의 완료시기는 회사가 가입완료를 신청절차상에서 표시한 시점으로 합니다.</li>
+        </ul>
+
+		<h4>제 7 조 (회원정보의 변경)</h4>
+        <ul>
+        	<li>①회원은 회사 웹사이트 "정보수정" 페이지에서 언제든지 본인의 개인정보를 열람하고 수정할 수 있습니다. 다만, 회원 개인식별 및 서비스 관리를 위해 비밀번호에 한하여 수정이 가능합니다.</li>
+            <li>② 회원이 전항의 변경사항을 수정하지 않아 발생한 불이익에 대하여 회사는 책임지지 않습니다.</li>
+        </ul>
+ 
+		<h4>제 8 조 (개인정보보호 의무)</h4>
+		<p>회사는정보통신망법, 개인정보보호법 등 관계법령이 정하는 바에 따라 회원의 개인정보를 보호하기 위해 노력합니다. 개인정보의 보호 및 사용에 대해서는 관련법 및 회사의 개인정보취급방침이 적용됩니다.</p>
+
+		<h4>제 9 조 (회원의 아이디 및 비밀번호의 관리에 대한 의무)</h4>
+        <ul>
+        	<li>① 회원의 아이디와 비밀번호에 관한 관리책임은 회원에게 있으며, 이를 타인에게 공개하여 제3자가 이용하도록 하여서는 안 됩니다.</li>
+			<li>② 회원은 아이디 및 비밀번호가 도용되거나 제3자가 사용하고 있음을 인지한 경우에는 이를 즉시 회사에 통지하여야 합니다.</li>
+			<li>③ 회사는 전항의 경우 회원의 개인정보보호 및 기타 서비스 부정이용행위 방지 등을 위하여 회원에게 비밀번호의 변경 등 필요한 조치를 요구할 수 있으며, 회원은 회사의 요구가 있는 즉시 회사의 요청에 성실히 응해야 합니다.</li>
+			<li>④ 회사는 회원이 본조 제2항 및 제3항에 따른 의무를 성실히 이행하지 않아 발생한 불이익에 대하여 책임지지 않습니다.</li>
+        </ul>
+
+		<h3>제 3 장 (책임)</h3>
+		<h4>제 10 조 (회사의 의무)</h4>
+        <ul>
+        	<li>① 회사는 관계법령과 본 약관이 정하는 권리의 행사와 의무의 이행을 신의에 좇아 성실하게 하여야 합니다.</li> 
+			<li>② 회사는 회원이 안전하게 서비스를 이용할 수 있도록 개인정보 보호를 위한 보안시스템을 갖추어야 하며, 개인정보취급방침을 공시하고 준수합니다.</li> 
+			<li>③ 회사는 회원의 개인정보를 회원 본인(만 14세 미만의 아동의 경우에는 보호자[법정대리인]의 동의)의 동의 없이 타인에게 누설 또는 배포하여서는 안 됩니다. 다만, 관계법령에 따라 공공기관 등의 요구가 있는 경우에는 그러하지 아니합니다.</li>
+			<li>④ 회사는 서비스이용과 관련하여 회원으로부터 제기된 의견이나 불만이 정당하다고 인정될 경우에는 이를 처리하여야 합니다. 회원이 제기한 의견이나 불만사항에 대해서는 게시판을 활용하거나 전자우편 등을 통하여 회원에게 처리과정 및 결과를 전달합니다.</li>
+        </ul>
+ 
+		<h4>제 11 조 (회원의 의무)</h4>
+        <ul>
+        	<li>① 회사의 명시적 동의가 없는 한 회원의 이용권한은 회원 개인에 한정되며, 타인에게 양도, 증여하거나 이를 담보로 제공할 수 없습니다.</li>
+        	<li>② 회원은 다음 행위를 하여서는 안 됩니다.
+            	<ul>
+                	<li>가. 신청 또는 변경 시 허위내용의 등록</li> 
+					<li>나. 타인의 정보도용</li> 
+					<li>다. 회사가 게시한 정보의 변경</li> 
+					<li>라. 회사와 기타 제3자의 저작권 등 지적재산권에 대한 침해</li>
+					<li>마. 회사 및 기타 제3자의 명예를 손상시키거나 업무를 방해하는 행위</li>
+					<li>바. 외설 또는 폭력적인 메시지, 화상, 음성, 기타 공서양속에 반하는 정보를 서비스에 공개 또는 게시하는 행위</li> 
+					<li>사. 회사의 동의 없이 영리를 목적으로 서비스를 사용하는 행위</li>
+					<li>아. 기타 불법적이거나 부당한 행위</li>
+                </ul>
+            </li>
+            <li>③ 회원은 관계법령, 본 약관의 규정, 이용안내 및 서비스와 관련하여 공지한 주의사항, 회사가 통지하는 사항 등을 준수하여야 하며, 기타 회사의 업무에 방해되는 행위를 하여서는 안 됩니다.</li>
+        </ul>
+
+		<h3>제 4 장 (서비스 제공 등)</h3>
+		<h4>제 12 조 (서비스의 제공)</h4>
+        <ul>
+        	<li>① 회사는 연중무휴, 1일 24시간 서비스 제공을 원칙으로 합니다.</li> 
+			<li>② 회사는 컴퓨터 등 정보통신설비의 보수점검, 교체 및 고장, 통신두절 또는 운영상 상당한 이유가 있는 경우 서비스의 제공을 일시적으로 중단할 수 있습니다. 이 경우 본 약관 제5조(회원에 대한 통지)에서 정한 방법으로 회원에게 통지합니다. 다만, 회사가 사전에 통지할 수 없는 부득이한 사유가 있는 경우 사후에 통지할 수 있습니다.</li> 
+			<li>③ 회사는 서비스의 제공에 필요한 경우 정기점검을 실시할 수 있으며, 정기점검시간은 서비스 초기화면에 팝업창으로 공지하도록 합니다.</li>
+        </ul>
+ 
+		<h4>제 13 조 (서비스의 변경)</h4>
+        <ul>
+        	<li>① 회사는 상당한 이유가 있는 경우에 운영상, 기술상의 필요에 따라 제공하고 있는 전부 또는 일부 서비스를 변경할 수 있습니다.</li> 
+			<li>② 서비스의 내용, 이용방법, 이용시간에 대하여 변경이 있는 경우에는 변경사유, 변경될 서비스의 내용 및 제공일자 등은 그 변경 전에 해당 서비스 초기화면에 게시하여야 합니다.</li> 
+			<li>③ 회사는 무료로 제공되는 서비스의 일부 또는 전부를 회사의 정책 및 운영의 필요상 수정, 중단, 변경할 수 있으며, 이에 대하여 관계법령에 특별한 규정이 없는 한 회원에게 별도의 보상을 하지 않습니다.</li>
+        </ul>
+
+		<h4>제 14 조 (정보의 제공 및 광고의 게재)</h4>
+        <ul>
+        	<li>① 회사는 회원이 서비스 이용 중 필요하다고 인정되는 다양한 정보를 공지사항이나 전자우편 또는 유선상 등의 방법으로 회원에게 제공할 수 있습니다. 다만, 회원은 언제든지 전자우편 등을 통하여 수신 거절을 할 수 있습니다.</li> 
+			<li>② 회사는 서비스 제공과 관련하여 해당 서비스 화면, 회사 웹사이트, 회원가입 시 회원이 직접 작성한 전자우편 등에 광고를 게재할 수 있습니다. 광고가 게재된 전자우편 등을 수신한 회원은 수신거절을 할 수 있습니다.</li>
+        </ul>
+
+		<h4>제 15 조 (게시물의 관리)</h4>
+        <ul>
+        	<li>① 회사는 회원이 등록한 게시물의 내용이 다음 각호에 해당된다고 판단되는 경우에 회원에게 사전 통지 없이 삭제할 수 있습니다.
+            	<ul>
+                    <li>가. 공공질서 및 미풍 양속에 위반되는 내용인 경우</li> 
+					<li>나. 범죄적 행위에 결부된다고 인정되는 내용일 경우</li> 
+					<li>다. 제3자의 저작권 등 기타 권리를 침해하는 내용인 경우</li>
+					<li>라. 기타 관계법령이나 회사에서 정한 규정에 위배되는 경우</li>
+                </ul>
+            </li>
+            <li>② 회사가 운영하는 게시판 등에 게시된 정보로 인하여 법률상 이익이 침해된 자는 회사에게 당해 정보의 삭제 또는 반박내용의 게재를 요청할 수 있습니다. 이 경우 회사는 관계법령 등에 따라 필요한 조치를 취하고 이를 신청인에게 통지합니다.</li>
+        </ul>
+
+		<h4>제 16 조 (권리의 귀속)</h4>
+        <ul>
+        	<li>① 회사가 제공하는 모든 서비스에 대한 저작권 및 지적재산권은 회사에 귀속됩니다.</li> 
+			<li>② 회원은 회사가 제공하는 서비스를 이용함으로써 얻은 정보를 회사의 사전 승낙없이 녹화∙복제∙ 편집∙전시∙전송∙배포∙판매∙방송∙공연하는 등의 행위로 회사의 저작권을 침해하여서는 안 됩니다.</li>
+			<li>③ 회원이 작성한 게시물에 대한 모든 권리 및 책임은 이를 게시한 회원에게 있습니다.</li>
+        </ul>
+ 
+		<h3>제 5 장 (상품권)</h3>
+		<h4>제 17 조 (상품권 발생)</h4>
+        <ul>
+        	<li>① 상품권은 다음 각호의 사유에 해당하는 경우 익월 초에 상품교환권으로 발행됩니다.
+            	<ul>
+                	<li>가. 질병, 상해로 인한 입원으로 결석하는 경우 결석일 수업료</li>
+					<li>나. 2촌 이내 부고로 인하여 결석하는 경우 결석일 수업료</li>
+					<li>다. 2형제, 3형제가 등록하는 경우 월별 실납부 수강료 별 할인금액</li>
+					<li>라. 레벨테스트 응시료 Payback, 친구추천이벤트 등 회사가 시행하는 이벤트에 참여하는 경우 당해 이벤트 금액</li>
+                </ul>
+            </li>
+            <li>② 제1항의 상품교환권은 다음 각호의 증빙서류 제출시에만 발행됩니다. 자세한 문의는 해당 캠퍼스로 문의해 주시기 바랍니다.
+                <ul>
+                	<li>가. 질병, 상해 입원 : 입원확인서, 진단서</li>
+					<li>나. 2촌 이내 부고 : 사망진단서</li>
+					<li>다. 친구추천이벤트 : 추천친구 정보</li>
+                </ul>
+            </li>
+        </ul>
+
+		<h4>제 18 조 (상품권 사용제한)</h4>
+        <ul>
+        	<li>① 상품교환권은 아발론교육, 랭콘잉글리쉬에서만 사용이 가능합니다.</li>
+			<li>② 상품교환권은 현금과 교환되지 않습니다.</li>
+			<li>③ 상품교환권은 발행된 캠퍼스에서만 사용가능합니다.</li>
+			<li>④ 상품교환권은 수강료 결제시에 사용할 수 있습니다.</li>
+			<li>⑤ 상품교환권은 타인에게 양도할 수 없습니다.</li>
+        </ul>
+
+
+		<h4>제 19 조 (상품권 유효기간)</h4>
+        <ul>
+        	<li>① 상품교환권의 유효기간은 발행일로부터 1년이며, 기간 중 사용하지 않을 경우 별도의 통지없이 자동소멸됩니다.</li>
+			<li>②휴원시 발행일로부터 1년 이내의 상품권은 소멸하지 않으며, 재등록할 경우 사용할 수 있습니다.</li>
+			<li>③ 퇴원시 또는 제18조 위반시 상품권의 효력은 즉시 소멸되고, 잔액은 현금으로 교환되지 않습니다</li>
+        </ul>
+
+		<h3>제 6 장 (계약해지 및 이용제한)</h3>
+		<h4>제 20 조 (계약해지)</h4>
+        <ul>
+        	<li>① 회원은 언제든지 서비스 이용을 중단하고 해지 신청할 수 있습니다. 회사는 관계법령 등이 정하는 바에 따라 이를 즉시 처리하여야 합니다.</li>
+			<li>② 회원이 계약을 해지할 경우, 관계법령 및 개인정보취급방침에 따라 회사가 회원정보를 보유하는 경우를 제외하고는 해지 즉시 회원의 모든 데이터는 소멸됩니다.</li>
+        </ul>
+
+		<h4>제 21 조 (이용제한 등)</h4>
+        <ul>
+        	<li>① 회사는 회원이 다음 각 호의 1에 해당하는 행위를 하였을 경우 기간을 정하여 전부 또는 일부의 서비스 이용을 중지하거나 상당기간의 최고 후 이용계약을 해지할 수 있습니다.
+            	<ul>
+                	<li>가. 회원이 이용신청 또는 변경 시, 허위사실을 기재하거나, 자신 또는 다른 회원의 아이디 및 개인정보를 이용ㆍ공유하는 경우</li>
+					<li>나. 회원이 회사 또는 제3자의 권리나 저작권을 침해하는 경우</li> 
+					<li>다. 회원이 회사에서 제공하는 서비스를 이용하여 상품 또는 용역을 판매하는 영업활동 등의 상행위를 하는 경우</li>
+					<li>라. 회원이 다른 이용자의 서비스 이용을 방해하거나, 회사의 운영진, 직원 또는 관계자를 사 칭하는 경우</li>
+					<li>마. 회원이 회사 웹사이트 내에서, 사회의 안녕질서 혹은 미풍양속을 저해하는 행위를 하거나, 그와 관련된 부호ㆍ문자ㆍ음성ㆍ음향 및 영상 등의 정보를 게시하여 타인에게 유포시키는 경우</li>
+					<li>바. 회사의 서비스 운영을 고의로 방해 하거나 그리할 목적으로 다량의 정보를 전송하거나 광고성 정보를 전송하는 경우</li>
+					<li>사. 관계법령 및 기타 본 약관에서 규정한 사항을 위반한 경우</li>
+					<li>아. 회사 및 타인의 명예를 훼손하거나 모욕하는 경우</li>
+                </ul>
+            </li>
+            <li>② 회원은 본조 제1항에 따른 이용제한 등에 대해 회사가 정한 절차에 따라 이의신청을 할 수 있습니다. 이 때 이의가 정당하다고 회사가 인정하는 경우 회사는 즉시 서비스의 이용을 재개합니다.</li>
+        </ul>
+
+		<h3>제 7 장 (기타)</h3>
+		<h4>제 22 조 (손해배상)</h4>
+		<p>회원이 본 약관의 규정을 위반하여 회사 또는 제3자에게 손해를 입힌 경우, 해당 회원은 회사 또는 제3자에게 발생한 손해를 배상할 책임이 있습니다.</p>
+
+		<h4>제 23 조 (면책조항)</h4>
+        <ul>
+        	<li>① 회사는 천재지변 또는 이에 준하는 불가항력으로 인하여 서비스를 제공할 수 없는 경우에는 서비스 제공에 관한 책임이 면제됩니다.</li>
+			<li>② 회사는 회원의 귀책사유로 인한 서비스 이용의 장애에 대하여는 책임을 지지 않습니다.</li>
+			<li>③ 회사는 회원이 서비스와 관련하여 게재한 정보, 자료, 사실의 신뢰도, 정확성 등의 내용에 관하여는 책임을 지지 않습니다.</li>
+			<li>④ 회사는 회원간 또는 회원과 제3자 상호간에 서비스를 매개로 하여 거래 등을 한 경우에는 책임이 면제됩니다.</li>
+			<li>⑤ 회사는 무료로 제공되는 서비스 이용과 관련하여 회원에게 발생한 손해에 대해서 관계법령에 특별한 규정이 없는 한 책임을 지지 않습니다.</li>
+			<li>⑥ 회사는 서비스 이용과 관련하여 회원에게 발생한 손해 가운데 회원의 고의, 과실에 의한 손해에 대하여 책임을 지지 않습니다.</li>
+        </ul>
+
+		<h4>제 24 조 (분쟁의 해결 및 재판관할)</h4>
+        <ul>
+        	<li>① 서비스 이용으로 발생한 분쟁에 대해 회사와 회원은 쌍방의 합의에 의하여 해결하도록 노력해야 합니다.</li>
+			<li>②본조 제1항의 합의가 성립하지 않아 소송이 제기될 경우 민사소송법상의 관할법원에 제소합니다.</li>
+        </ul>
+
+		<ul class="mat20">
+            <li>[부칙]</li>
+        	<li>o 본 약관은 2022년 06월 (  )일부터 시행됩니다.</li>
+			<li>o 2013년 08월 05일부터 시행되던 종전의 약관은 본 약관으로 대체합니다.</li>
+        </ul>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
 </div>
-</s_t3>
-<script src="./images/script.js"></script>
+
+<!-- 팝업내용 :: 학칙 -->
+<div class="modal-fixed-pop-wrapper layer-popup" id="popupRegulation">
+	<div class="modal-fixed-pop-inner">
+		<div class="modal-inner-box">
+			<div class="modal-inner-content">
+				<section class="footer-modal-content">
+					<button title="팝업 닫기" class="modal-close-btn"  onclick="modalPopupClose('#popupRegulation')"><i class="xi-close-thin"></i></button>
+					<h1>학칙</h1>
+					<div class="footer-inner-box">
+						<div class="footer-inner">
+							<h4>제1조 [목 적]</h4>
+		<p>1-1. 랭콘잉글리쉬, 아발론잉글리쉬의 선생님과 직원들은 학생의 안전과 쾌적한 수업환경을 위해 최선을 다할 것입니다.</p>
+		<p>1-2. 랭콘잉글리쉬, 아발론잉글리쉬에 등록하는 학생과 학부모는 다음의 규칙을 준수, 건전하고 밝은 학원생활을 할 수 있도록 합니다.</p>
+		<h4>제2조 [기본규칙]</h4>
+		<p>2-1. 랭콘잉글리쉬, 아발론잉글리쉬 학생은 타인을 존중하고 배려하는 마음을 가져야 합니다.</p>
+    	<ul>
+	    	<li>- 학생은 학원, 셔틀버스 내에서 시끄럽게 떠들거나 다른 학생을 괴롭히지 않습니다.</li> 
+			<li>- 학생은 선생님에게 불손한 언행과 행동을 하지 않습니다.</li> 
+			<li>- 학생은 책상이나 벽에 낙서 또는 기물을 파손하지 않습니다.(기물파손 및 영어도서 분실시 배상)</li> 
+			<li>- 학생은 셔틀버스 탑승시간을 준수하며, 안전지도에 충실히 따릅니다.</li>
+			<li>- 학생은 캠퍼스에서 스마트폰, 게임기 등은 반드시 전원을 끌 수 있도록 합니다.</li>
+    	</ul>
+		<p>2-2. 랭콘잉글리쉬, 아발론잉글리쉬 학생은 사고가 일어나지 않도록 안전에 유의해야 합니다.</p>
+    	<ul>
+	    	<li>- 학생은 셔틀버스에서 안전벨트를 반드시 착용합니다.</li> 
+			<li>- 학생은 캠퍼스나 계단에서 뛰지 않으며, 선생님의 안전지도를 잘 따라야 합니다.</li> 
+			<li>- 수업 중 건강에 이상이 있는 경우 선생님에게 신속하게 알립니다.</li> 
+			<li>- 위험한 행동을 하는 학생을 목격한 경우에는 반드시 선생님에게 알려야 합니다.</li>
+			<li>- 질서 있게 이동하며, 타인을 앞질러 가거나 밀치는 행동은 하지 않습니다.</li> 
+        </ul>
+        <p>2-3. EOP(English Only Policy): 랭콘잉글리쉬, 아발론잉글리쉬 학생은 캠퍼스 내에서 영어를 사용합니다.</p>
+		<h4>제3조 [퇴원규정]</h4>   
+		<p>학생 또는 학부모가 다음 각 호의 어느 하나에 해당하는 경우 별도의 경고 없이 퇴원조치 됩니다.</p>
+		<p>다만, 퇴원 시 수강료, 온라인 비용 등은 환불 규정에 맞추어 환불됩니다.</p>
+		<ul>
+            <li>3-1. 상해, 폭행, 폭언, 욕설, 괴롭힘, 심부름, 기타 이와 유사 행위로 다른 학생에게 육체적, 정신적인 피해를 끼치는 행위</li> 
+            <li>3-2. 지속된 경고에도 수업시간에 다른 학생의 학습 분위기를 해치는 행위</li>
+            <li>3-3. 고성방가, 싸움 등 소란행위 및 절도 등의 기타 법 질서에 위배되는 행위</li>
+            <li>3-4. 캠퍼스 선생님, 직원들에 대하여 폭행, 욕설 등 유사한 행위로 모욕감을 주는 행위</li>
+            <li>3-5. 지속적인 요청과 요구로 인하여 학원 경영 및 업무에 방해가 되는 행위</li>
+            <li>3-6. 캠퍼스 선생님, 직원들의 안내 없이 캠퍼스를 임의로 출입하는 행위</li>
+            <li>3-7. 그 외 학생 본인이나 다른 학생들의 안전, 학습분위기, 정서를 해친다고 판단되는 행위</li>
+		</ul>
+
+		<ul>
+			<li class="mat20">(시행일)</li>
+        	<li>본 학칙은 2018년 03월 01일부터 시행합니다.</li>
+			<li>2017년 11월 08일부터 시행되던 종전의 학칙은 본 학칙으로 대체합니다.</li>
+        </ul>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 팝업내용 :: 개인정보처리방침 -->
+<div class="modal-fixed-pop-wrapper layer-popup" id="popupPrivacy">
+	<div class="modal-fixed-pop-inner">
+		<div class="modal-inner-box">
+			<div class="modal-inner-content">
+				<section class="footer-modal-content">
+					<button title="팝업 닫기" class="modal-close-btn"  onclick="modalPopupClose('#popupPrivacy')"><i class="xi-close-thin"></i></button>
+					<h1>개인정보처리방침</h1>
+					<div class="footer-inner-box">
+						<div class="footer-inner">
+							<h4>1. 개인정보의 수집목적 및 이용</h4>
+		<p>(주)아발론교육은 회원님 개인의 정보를 수집하는 목적은 아발론교육 사이트를 통하여 회원님께 최적의 맞춤화된 서비스를 제공해드리기 위한 것입니다. 아발론교육은 각종의 컨텐츠를 유료 또는 무료로 서비스해 드리고 있습니다. 이때 회원님께서 제공해주신 개인정보를 바탕으로 회원님께 보다 더 유용한 정보를 선택적으로 제공하는 것이 가능하게 됩니다.</p>
+        <a id="showHere"></a>
+		<h4>2. 수집하는 개인정보 항목 및 수집방법</h4>
+		<p>아발론교육은 최초 회원가입을 하실 때 서비스 제공을 위해 가장 필수적인 개인정보를 받고 있습니다. 회원가입 시에 받는 정보는 회원님의 이름, 성별, 주소, 연락처, 생년월일 등입니다. 이 이외에 특정 서비스를 제공하기 위하여 추가적인 정보제공을 요청하고 있습니다. 또한 설문조사나 이벤트 시에 집단적인 통계분석을 위해서 개인정보 기재를 요청 할 수 있습니다. 이때에도 기입하신 정보는 해당서비스 제공이나 회원님께 사전에 밝힌 목적 이외의 다른 어떠한 목적으로도 사용되지 않음을 알려드립니다.</p>
+        
+        <h4>3. 개인정보의 보유 및 파기</h4>
+		<p>아발론교육은 원칙적으로 개인정보를 제공받은 목적이 달성된 경우에 수집된 개인정보는 전자적 파일형태의 정보는 기록을 재생할 수 없는 기술적방법에 의하여 파기하며, 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다. 다만, 회사의 내부방침 및 관계법령의 규정에 의하여 보존할 필요가 있는 경우 일정기간동안 개인정보를 보관합니다.</p>
+        <div class="tab01 mat10">
+        	<h5>1) 회사내부 방침에 의한 정보보유 사유</h5>
+            <ul class="middle">
+            	<li>보존항목 : 이름, 생년월일, 성별, 아이디(ID), 전화번호, 주소, 휴대전화번호, 본인 확인기관을 통해 받은 식별정보</li>
+                <li>보존근거 : 서비스 이용의 혼선방지, 불법적 사용자에 대한 관련 기관 수사협조, 수강안내</li>
+                <li>보존기간 : 1년</li>
+            </ul>
+            
+            <h5>2) 관련법령에 의한 정보보유 사유</h5>
+            <p>전자상거래등에서의소비자보호에관한법률 등 관계법령이 정하는 경우에는 회원님의 아발론교육회원 탈퇴 이후에도 법령이 정하는 일정한 기간에 한하여, 회원님의 정보를 보유하게 됩니다.</p>
+            <ul>
+            	<li>①표시∙광고에 관한 기록 : 6월</li>
+                <li>② 계약 또는 청약철회 등에 관한 기록 : 5년</li>
+                <li>③ 대금결제 및 재화등의 공급에 관한 기록 : 5년</li>
+                <li>④ 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년</li>
+            </ul>
+            
+            <h5>3) 개인정보 유효기간제 도입</h5>
+            <ul class="none">
+            	<li>① 회사는 1년 이상 서비스 미이용자의 개인정보를 위하여 해당 회원의 개인정보를 다른 이용자의 개인정보와 분리하여 저장 관리합니다.</li> 
+                <li>②미이용기간은 최종로그인일자 및 아발론교육 포인트, 상품권, 이월금 사용, 구매이력으로 산정하며, 고객의 복원 및 회원탈퇴 요청이 없을 경우 서비스 미이용자에 대하여 분리∙저장 관리 합니다.</li> 
+                <li>③ 회사는 미이용자의 개인정보 분리∙저장 시점 도래 1개월 전에 이메일 등을 통해 회원님께 관련 내용을 공지합니다.</li>
+            </ul>
+        </div>
+    	
+        <h4>4. 개인정보의 제공 및 공유</h4>
+		<p>원칙적으로 아발론교육은 회원님의 개인정보를 타인 또는 타기업·기관에 공개하지 않습니다. 다만 회원님이 공개에 동의한 경우 또는 아발론교육의 서비스 이용약관을 위배하는 사람이나 아발론교육의 서비스를 이용하여 타인에게 법적인 피해를 주거나 미풍양속을 해치는 행위를 한 사람 등에게 법적인 조치를 취하기 위하여 개인정보를 공개해야 한다고 판단되는 충분한 근거가 있는 경우는 예외로 합니다. 이 경우에도 개인에게는 제공하지 않으며 규정된 절차에 따라서 수사기관에만 제공할 수 있습니다. 아발론교육은 개인별 맞춤 서비스(Personalized Service) 등 보다 나은 서비스 제공을 위해 회원님의 개인정보를 비즈니스 파트너와 공유할 수 있습니다. 이 경우에도 정보수집 또 는 정보제공 이전에 회원님께 비즈니스 파트너가 누구인지, 어떤 정보가 왜 필요한지, 그리고 언제까지 어떻게 보호/관리되는지 알려드리고 동의를 구하는 절차를 거치게 되며, 회원 님께서 동의하지 않는 경우에는 추가적인 정보를 수집하거나 비즈니스 파트너와 공유하지 않습니다.</p>
+        <p class="mat10">성별, 연령별 기타 특정 조건의 집단에 대한 광고 게재 및 발송 시에도 회원님 개인의 정보는 광고를 의뢰한 개인이나 단체에 제공되지 않습니다. 기타 통계처리, 학술연구, 시장조사를 위하여 필요한 경우에는 특정한 개인을 식별할 수 없는 형태로만 정보가 제공됩니다.</p>
+        <div class="tab01">
+        	<h5>가맹사업 서비스를 위한 제공</h5>
+            <ul class="middle">
+            	<li>- 개인정보를 제공받는 자 : (주)아발론교육 각 가맹점</li>
+                <li>- 제공하는 개인정보 항목 : 학부모회원의 이름, 아이디, 비밀번호, 19세 이상여부, 주소, 휴대폰번호, E-mail, 비상연락처/학생회원의 이름, 아이디, 비밀번호, 성별, 생년월일, 학교, 학년, 수강중 또는 수강 예정캠퍼스, 교재수령 주소, 휴대폰 번호</li>
+                <li>- 제공받는 자의 개인정보 이용 목적 : 각 가맹점 학생의 학습/운영/평가, 전화를 이용한 학습진행</li>
+                <li>- 제공기간 : 회원탈퇴 시까지</li>
+                <li>- 개인정보 제공에 대한 동의를 거부할 권리가 있으며, 동의를 거부할 경우 가맹사업의 특성상 해당 서비스 이용이 불가능하거나, 서비스 이용목적에 따른 서비스 제공에 제한이 따르게 됩니다.</li>
+            </ul>
+        </div>
+        
+        <h4>5. 개인정보보호를 위한 기술적/제도적 관리</h4>
+		<p>회원님의 개인정보는 비밀번호에 의해 보호되고 있습니다. 회원님 계정의 비밀번호는 오직 본인만이 알 수 있으며, 개인정보의 확인 및 변경도 비밀번호를 알고 있는 본인에 의해서 만 가능합니다. 따라서 회원님의 비밀번호는 누구에게도 알려주면 안됩니다. 또한 작업을 마치신 후에는 로그아웃(log-out)하시고 웹브라우저를 종료하는 것이 바람직합니다. 특히 다른 사람과 컴퓨터를 공유하여 사용하거나 공공장소에서 이용한 경우 개인정보가 다른 사람에게 알려지는 것을 막기 위해서 이와 같은 절차가 더욱 필요하다고 하겠습니다.</p>
+        
+        <h4>6. 자신의 개인정보 열람, 정정 및 삭제</h4>
+		<p>회원님은 언제든지 등록되어 있는 회원님의 개인정보를 열람할수 있으며, 아이디(ID) 삭제를 요청하실 수 있습니다. 회원님 개인 정보의 열람은 환경설정의 이용자정보관리에서 하 실 수 있으며, 아이디 삭제는 각 캠퍼스 상담직원에게 요청하시면 됩니다. 개인정보와 관련하여 불만이나 의견이 있으신 분은 개인정보 관리담당자에게 메일(privacy@avalon.co.kr) 로 의견을 주시면 접수 즉시 조치하고 처리결과를 통보해 드리겠습니다.</p>
+        
+        <h4>7. 어린이의 개인정보보호</h4>
+		<p>만14세 미만의 어린이는 자신에 대한 정보를 다른 사람에게 함부로 보내면 안되며, 보내기 전에 반드시 부모님의 허락을 받아야 합니다. 아발론교육은 만14세 미만 어린이의 정보를 다른 사람 또는 업체와 공유하지 않습니다. 회원님 계정의 비밀번호에 대한 보안을 유지할 책임은 회원님 자신에게 있습니다. 아발론교육에서 메일 또는 기타 방법으로 회원님께비밀번호를 질문하는 경우는 절대 없으므로 어떠한 경우에도 비밀번호를 알려주지 마십시오. 로그온(log-on)한 상태에서는 주위의 다른 사람에게 개인정보가 유출되지 않도록 특별히 주의를 기울이시기 바랍니다.</p>
+        
+        <h4>8. 개인정보 자동수집 장치의 설치 및 운영 및 거부에 관한 사항</h4>
+		<p>회사는 이용자의 정보를 수시로 저장하고 찾아내는 '쿠키(cookie)' 등을 운용합니다. 쿠키란 회사의 웹사이트를 운영하는데 이용되는 서버가 귀하의 브라우저에 보내는 아주 작은 텍스트 파일로서 이용자의 컴퓨터 하드디스크에 저장됩니다. 회사는 다음과 같은 목적을 위해 쿠키를 사용합니다.</p>
+        <div class="tab01 mat10">
+        	<h5>ο 쿠키 등 사용 목적</h5>
+            <p>- 이용자의 접속 빈도나 방문 시간 등을 분석, 이용자의 취향과 관심분야를 파악 및 자취 추적, 각종 이벤트 참여 정도 및 방문 횟수 파악 등을 통한 타겟 마케팅 및 개인 맞춤 서비스 제공 이용자는 쿠키 설치에 대한 선택권을 가지고 있습니다. 따라서, 이용자는 웹브라우저에서 옵션을 설정함으로써 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의 저장을 거부할 수도 있습니다.</p>
+            
+            <h5>ο 쿠키 설정 거부 방법</h5>
+            <p>예: 쿠키 설정을 거부하는 방법으로는 이용자가 사용하는 웹 브라우저의 옵션을 선택함으로써 모든 쿠키를 허용하거나 쿠키를 저장할 때마다 확인을 거치거나, 모든 쿠키의 저장을 거부할 수 있습니다.</p>
+            <p class="mat10">설정방법 예(인터넷 익스플로어의 경우) : 웹 브라우저 상단의 도구 > 인터넷 옵션 > 개인정보</p>
+            <p class="mat10">단, 이용자가 쿠키 설치를 거부하였을 경우 서비스 제공에 어려움이 있을 수 있습니다.</p>
+        </div>
+        
+        <h4>9. 개인정보관리책임자</h4>
+		<p>회사는 회원의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 아래와 같이 개인정보관리책임자를 지정하고 있습니다.</p>
+        <ul class="middle mat10">
+			<li>ο 개인정보 관리책임자 성명 : 김명기</li>
+			<li>ο 전화번호 : 1577-0502</li>
+			<li>ο 이메일 : privacy@avalon.co.kr</li>
+		</ul>
+        
+        <h4>10. 개인정보에 대한 민원처리 및 분쟁해결</h4>
+        <div class="tab01">
+        	<h5>(1) 민원처리부서</h5>
+            <ul class="none">
+            	<li>1) 아발론교육 고객센터</li>
+                <li>2) 근무시간 : 평일 13:00~20:00 (토요일 및 일요일, 공휴일은 휴무입니다.)</li>
+            </ul>
+            
+            <h5>(2) 분쟁조정기관</h5>
+            <ul class="none">
+            	<li>1) 개인정보분쟁조정위원회 (URL : www.kopico.or.kr / 전화 : 02-1336)</li>
+                <li>2) 정보보호마크인증위원회 (URL : www.eprivacy.or.kr / 전화 : 02-580-0533~4)</li>
+            </ul>
+        </div>
+        
+        <h4>11. 개인정보보호정책 개정</h4>
+		<p>아발론교육이 본 정책을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행정책과 함께 초기화면에 그 적용일자 칠(7일) 이전부터 적용일자 전일까지 공지합니다.</p>
+        
+        <h4>12. 청소년 보호 활동</h4>
+		<p>아발론교육은 서비스 약관 및 정책을 수립하고, 자체적으로 음란, 불법 등의 유해정보를 규제하고 있습니다. 청소년의 건전한 성장을 저해하는 비윤리적, 반사회적 행위에 대해서는 엄격히 제재하고자 노력하고 있습니다.</p>
+        
+        <h4>13. 개인정보위탁처리</h4>
+		<p>회사는 서비스 향상을 위해서 이용자들의 개인정보를 외부 전문 업체에 위탁하여 처리할 수 있습니다. 개인정보의 처리를 위탁하는 경우에는 미리 그 사실을 이용자들에게 공지할 것입니다. 또한 위탁계약 등을 통하여 서비스 제공자의 개인 정보보호 관련 지시 엄수, 개인정보에 관한 비밀유지, 제3자 제공의 금지 및 사고시의 책임 부담 등을 명확히 규정하고 당해 계약 내용을 서면 또는 전자적으로 보관할 것입니다.</p>
+        <div class="tab01 mat10">
+        	<h5>개인정보 수집을 위한 위탁</h5>
+            <ul class="middle">
+            	<li>- 수탁자 : (주)아발론교육 각 가맹점</li>
+                <li>- 위탁 목적 : 고객 개인정보 수집</li>
+                <li>- 개인정보의 보유 및 이용기간 : 회원 탈퇴 시 또는 위탁 계약 종료 시</li>
+            </ul>
+            
+            <h5>배송 서비스를 위한 위탁</h5>
+            <ul class="middle">
+            	<li>- 수탁자 : 금명문화㈜</li>
+                <li>- 위탁 목적 : 주문 상품 배송</li>
+                <li>- 개인정보의 보유 및 이용기간 : 회원 탈퇴 시 또는 위탁 계약 종료 시</li>
+            </ul>
+            
+            <h5>통학버스 승·하차를 위한 위탁</h5>
+            <ul class="middle">
+            	<li>- 수탁자 : 통학버스 기사</li>
+                <li>- 위탁 목적 : 승·하차 확인</li>
+                <li>- 개인정보의 보유 및 이용기간 : 회원 탈퇴 시 또는 계약 종료 시</li>
+            </ul>
+
+            
+        </div>
+        
+        <h4>14. 고지의 의무</h4>
+		<p>현 개인정보취급방침 내용 추가, 삭제 및 수정이 있을 시에는 개정 최소 7일전부터 홈페이지의 '공지사항'을 통해 고지할 것입니다.</p>
+        <div class="tab01 mat10">
+            <ul class="middle">
+            	<li>- 공고일자 : 2010년 11월 15일</li>
+                <li>- 시행일자 : 2010년 12월 01일</li>
+                <li>- 시행일자 : 2015년 08월 18일</li>
+                <li>- 시행일자 : 2017년 11월 08일</li>
+                <li>- 시행일자 : 2018년 07월 09일</li>
+           </ul>
+        </div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 팝업내용 :: 위치정보처리방침 -->
+<div class="modal-fixed-pop-wrapper layer-popup" id="popupLocation">
+	<div class="modal-fixed-pop-inner">
+		<div class="modal-inner-box">
+			<div class="modal-inner-content">
+				<section class="footer-modal-content">
+					<button title="팝업 닫기" class="modal-close-btn"  onclick="modalPopupClose('#popupLocation')"><i class="xi-close-thin"></i></button>
+					<h1>위치정보처리방침</h1>
+					<div class="footer-inner-box">
+						<div class="footer-inner">
+		<p>아발론교육은 이용자의 동의를 기반으로 개인위치정보를 수집·이용하고 있으며, 이용자의 개인위치정보를 소중하게 생각하고, 고객의 정보를 가장 적극적이고 효과적으로 보호하기 위하여 항상 최선을 다해 노력하고 있습니다. 아발론교육(이하 ‘회사’라 함)은 고객님의 개인위치정보를 중요시하며, 「위치정보의 보호 및 이용 등에 관한 법률」, 「개인정보 보호법」 등 개인위치정보와 관련된 법령상의 개인위치정보보호 규정을 준수하고 있습니다.</p>
+
+		<h4>1. 개인위치정보의 처리 목적 및 보유기간</h4>
+		<p>- 회사는 이용자의 동의가 있거나 법령의 규정에 의한 경우에만 개인위치정보를 수집·이용하고 있으며 이용목적은 아래와 같습니다.</p>
+		<ul>
+			<li>① 처리 목적</li>
+			<li>회사는 차량의 위치정보를 이용 하여 학생들의 고유 NFC태그로 간접적으로 학생의 위치를 파악하고 학부모가 설치한 앱에 학생의 위치를 전달하여 학생 탑승 및 하차 위치를 학부모에게 알리기 위해 정보를 수집합니다.</li>
+			<li>② 보유 기간</li>
+			<li>회사는 「위치정보의 보호 및 이용 등에 관한 법률」 제16조 제2항에 따라 위치정보 수집·제공사실 확인자료를 자동 기록·보존하며, 해당 자료는 12개월간 보관합니다. 회사는 개인위치정보의 수집 또는 제공목적을 달성한 때에는 제3항의 위치정보 수집·제공사실 확인자료를 제외한 개인위치정보를 즉시 파기합니다. 다만, 다른 법률에 따라 보유하여야 하거나 회원이 개인위치정보의 보유에 별도로 동의한 경우에는 회원이 동의한 때로부터 최대 1년간 이를 보유할 수 있습니다.</li>
+		</ul>
+		<h4>2. 개인위치정보 수집·이용·제공사실 확인자료의 보유근거 및 보유기간</h4>
+		<p>회사는 「위치정보의 보호 및 이용 등에 관한 법률」 제16조 제2항에 근거하여 개인위치정보주체에 대한 위치정보의 수집사실 확인자료를 위치정보시스템에 자동으로 기록하여, 해당 자료는 1년간 보존합니다.</p>
+		
+		<h4>3. 개인위치정보의 파기 절차 및 방법</h4>
+        <ul>
+        <li>① 회사는 「위치정보의 보호 및 이용 등에 관한 법률」 제24조 제4항에 근거하여 개인위치정보주체가 동의의 전부 또는 일부를 철회한 경우에는 지체없이 수집된 개인위치정보 및 위치정보 수집사실 확인자료(동의의 일부를 철회하는 경우에는 철회하는 부분의 개인위치정보 및 위치정보수집 사실 확인자료에 한 합니다)를 복구 및 재생이 불가능한 방법으로 파기합니다.</li>
+		<li>② 회사는 개인위치정보주체의 위치정보 수집목적을 달성하거나, 개인위치정보주체가 위치정보의 수집에 대한 동의의 전부 또는 일부에 대하여 철회한 때에는 「위치정보의 보호 및 이용 등에 관한 법률」 제16조 제2항의 규정에 근거하여 기록, 보존하여야 하는 위치정보의 수집사실 확인자료 외의 당해 개인위치정보를 복구 및 재생이 불가능한 방법으로 지체 없이 파기합니다.</li>
+		</ul>
+		
+		<h4>4. 개인위치정보의 위탁 및 제공</h4>
+        <ul>
+        	<li>① 회사는 제삼자에게 개인위치정보를 제공하지 않습니다.</li>
+        </ul>
+
+		<h4>5. 개인위치정보의 제삼자 제공 및 통보에 관한 사항</h4> 
+        	<ul>
+        	<li>① 회사는 원칙적으로 수집한 개인위치정보는 제삼자에게 제공하지 않으며, 제삼자에게 개인위치정보를 제공해야 하는 경우 홈페이지, 메일 등을 통해 반드시 사전에 이용자에게 해당 사실을 알리고 동의를 구합니다.</li>
+            <li>② 회사는 「위치정보의 보호 및 이용 등에 관한 법률」 제19조 제3항에 근거하여 개인위치정보를 개인위치정보주체가 지정하는 제삼자에게 제공하는 경우에는 매회 개인위치정보주체에게 제공받는 자, 제공일시 및 제공목적을 즉시 통보합니다.</li>
+ 			</ul>
+
+		<h4>6. 위치정보의 보호조치에 관한 사항</h4>
+			<p>회사는 개인위치정보 보호에 대한 회사정책 및 「위치정보의 보호 및 이용 등에 관한 법률」 제16조에 근거하여 개인위치정보주체의 위치정보를 보호하며, 이러한 정책을 웹사이트에 게시하고, 개인위치정보보호를 위한 적합한 보안조치를 취합니다.</p>
+
+		<h4>7. 개인위치정보주체의 권리</h4>
+        <ul>
+        	<li>① 개인위치정보주체는 언제든지 위치정보 수집에 대한 동의의 전부 또는 일부를 철회할 수 있습니다.</li>
+            <li>② 개인위치정보주체는 언제든지 개인위치정보의 수집의 일시적인 중지를 요구할 수 있습니다. 이 경우 회사는 요구를 거절하지 아니하며, 이를 위한 기술적 수단을 갖추고 있습니다. </li>
+			<li>③ 개인위치정보주체는 회사에 대하여 아래 자료의 열람 또는 고지를 요구할 수 있고, 당해 자료에 오류가 있는 경우에는 그 정정을 요구할 수 있습니다. 이 경우 회사는 정당한 이유 없이 요구를 거절하지 아니합니다.
+				<ul>
+				<li>&nbsp;1. 개인위치정보주체에 대한 위치정보 수집사실 확인자료</li>
+				<li>&nbsp;2. 개인위치정보주체의 개인위치정보가 「위치정보의 보호 및 이용 등에 관한 법률」 또는 다른 법률의 규정에 의하여 제삼자에게 제공된 이유 및 내용</li>
+				</ul>
+			<li>④ 회사는 개인위치정보주체가 위치정보 수집에 대한 동의의 전부 또는 일부를 철회한 경우에는 지체 없이 수집된 개인위치정보 및 위치정보 수집사실 확인자료(동의의 일부를 철회한 경우에는 철회하는 부분의 개인위치정보에 한 한다)를 파기합니다.</li>
+			<li>⑤ 개인위치정보주체는 제1항 내지 제4항의 권리행사를 위해 이메일, 전화, 방문 등을 통해 회사에 요구할 수 있습니다.</li>
+        </ul>
+ 
+		<h4>8. 보호의무자의 권리의무와 그 행사방법에 관한 사항</h4>
+		<ul>
+		<li>① 회사는 「위치정보의 보호 및 이용 등에 관한 법률」 제26조 제1항에 근거하여 보호의무자가 8세 이하의 아동등의 생명 또는 신체의 보호를 위하여 8세 이하의 아동등의 개인위치정보의 수집ㆍ이용 또는 제공에 동의하는 경우에는 본인의 동의가 있는 것으로 봅니다.</li>
+		<li>② 이용자 및 법정 대리인은 언제든지 등록되어 있는 자신 혹은 당해 만 8세 이하 아동의 개인정보를 조회하거나 수정할 수 있으며 가입해지를 요청할 수도 있습니다. 위치정보관리책임자에게 서면, 전화 또는 이메일로 연락하시면 지체 없이 조치하겠습니다.</li>
+		<li>③ 이용자가 개인정보의 오류에 대한 정정을 요청하신 경우에는 정정을 완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다. 또한 잘못된 개인정보를 제삼자에게 이미 제공한 경우에는 정정 처리결과를 제삼자에게 지체 없이 통지하여 정정이 이루어지도록 하겠습니다.</li>
+		<li>④ 회사는 이용자 혹은 법정 대리인의 요청에 의해 해지 또는 삭제된 개인정보는 "1. 개인위치정보의 처리 목적 및 보유기간"에 명시된 바에 따라 처리하고 그 외의 용도로 열람 또는 이용할 수 없도록 처리하고 있습니다.</li>
+		</ul>
+		
+		<h4>9. 개인정보 보호책임자</h4>
+		<ul>
+		
+		<li>① 회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보처리와 관련한 정보주체의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보보호책임자를 지정하고 있습니다.</li>
+        <ul>
+        	<li>-개인정보 보호책임자</li>
+			<li>성명 : 김명기</li>
+			<li>직책 : 대표이사</li>
+			<li>연락처 : 1577-0502, privacy@avalon.co.kr</li>
+        </ul>
+		
+		
+		<li>② 정보주체는 개인정보침해로 인한 구제를 받기 위하여 개인정보분쟁조정위원회, 한국인터넷진흥원 개인정보침해신고센터 등에 분쟁해결이나 상담 등을 신청할 수 있습니다. 이 밖에 기타 개인정보침해의 신고, 상담에 대하여는 아래의 기관에 문의하시기 바랍니다.</li>
+        <ul>
+        	<li>1. 개인정보분쟁조정위원회 : (국번 없이) 1833-6972 (www.kopico.go.kr)</li>
+			<li>2. 개인정보침해신고센터 : (국번 없이) 118 (privacy.kisa.or.kr)</li>
+			<li>3. 대검찰청 : (국번 없이) 1301 (www.spo.go.kr)</li>
+			<li>4. 경찰청 : (국번 없이) 182 (ecrm.cyber.go.kr)</li>
+        </ul>
+        
+		<li>③ 「개인정보 보호법」 제35조(개인정보의 열람), 제36조(개인정보의 정정·삭제), 제37조(개인정보의 처리정지 등)의 규정에 의한 요구에 대하여 공공기관의 장이 행한 처분 또는 부작위로 인하여 권리 또는 이익의 침해를 받은 자는 행정심판법이 정하는 바에 따라 행정심판을 청구할 수 있습니다.  중앙행정심판위원회 : (국번 없이) 110 (www.simpan.go.kr)</li>
+		</ul>
+		
+		<h4>12. 기타</h4>
+		
+       <p>회사는 개인위치정보취급방침 내용에 대한 추가, 삭제 및 수정이 있을 경우 시행 7일 전 홈페이지 공지사항을 통해 이용자에게 고지드리겠습니다. 또한 관련 법령이나 회사 정책 등으로 인하여 불가피하게 처리방침을 변경해야 하는 경우, 공지사항을 통해 빠르게 알려드리고 있으니 참고하여 주시기 바랍니다.</p>
+
+		<ul>
+			<li class="mat20">개인위치정보처리방침 시행일자 : 2023.08.25</li>
+        </ul>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KB9TBBQS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+		<!-- //footer -->
+	</div>
+	<!-- // #wrap -->
+
+	<!-- 팝업내용 :: LanGCon Level Test 영상 -->
+	<div class="modal-fixed-pop-wrapper layer-popup" id="popupLevelVideo">
+		<div class="modal-fixed-pop-inner">
+			<div class="modal-inner-box">
+				<div class="modal-inner-content">
+					<section class="footer-modal-content">
+						<button title="팝업 닫기" class="modal-close-btn" onclick="modalPopupClose('#popupLevelVideo')"><i class="xi-close-thin"></i></button>
+						<h1>LanGCon Level Test</h1>
+						<div class="video-modal-inner">
+							<div class="video-container" data-code="MsZQyGkUIsE"></div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 팝업내용 :: Mobile Learning 영상 01 -->
+	<div class="modal-fixed-pop-wrapper layer-popup" id="popupMobileLearning01">
+		<div class="modal-fixed-pop-inner">
+			<div class="modal-inner-box">
+				<div class="modal-inner-content">
+					<section class="footer-modal-content">
+						<button title="팝업 닫기" class="modal-close-btn" onclick="modalPopupClose('#popupMobileLearning01')"><i class="xi-close-thin"></i></button>
+						<h1>파닉스 아일랜드</h1>
+						<div class="video-modal-inner">
+							<div class="video-container" data-code="eIkkdI8SkMY"></div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 팝업내용 :: Mobile Learning 영상 02 -->
+	<div class="modal-fixed-pop-wrapper layer-popup" id="popupMobileLearning02">
+		<div class="modal-fixed-pop-inner">
+			<div class="modal-inner-box">
+				<div class="modal-inner-content">
+					<section class="footer-modal-content">
+						<button title="팝업 닫기" class="modal-close-btn" onclick="modalPopupClose('#popupMobileLearning02')"><i class="xi-close-thin"></i></button>
+						<h1>랭콘 아일랜드</h1>
+						<div class="video-modal-inner">
+							<div class="video-container" data-code="Gnk52IscD8o"></div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 팝업내용 :: Mobile Learning 영상 03 -->
+	<div class="modal-fixed-pop-wrapper layer-popup" id="popupMobileLearning03">
+		<div class="modal-fixed-pop-inner">
+			<div class="modal-inner-box">
+				<div class="modal-inner-content">
+					<section class="footer-modal-content">
+						<button title="팝업 닫기" class="modal-close-btn" onclick="modalPopupClose('#popupMobileLearning03')"><i class="xi-close-thin"></i></button>
+						<h1>아발론 리더스</h1>
+						<div class="video-modal-inner">
+							<div class="video-container" data-code="vmdHK-t03Hk"></div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 팝업내용 :: Mobile Learning 영상 04 -->
+	<div class="modal-fixed-pop-wrapper layer-popup" id="popupMobileLearning04">
+		<div class="modal-fixed-pop-inner">
+			<div class="modal-inner-box">
+				<div class="modal-inner-content">
+					<section class="footer-modal-content">
+						<button title="팝업 닫기" class="modal-close-btn" onclick="modalPopupClose('#popupMobileLearning04')"><i class="xi-close-thin"></i></button>
+						<h1>[Match of Vitamin·Avocado]  엠바</h1>
+						<div class="video-modal-inner">
+							<div class="video-container" data-code="jPFG6Brl6Ys"></div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 팝업내용 :: Mobile Learning 영상 05 -->
+	<div class="modal-fixed-pop-wrapper layer-popup" id="popupMobileLearning05">
+		<div class="modal-fixed-pop-inner">
+			<div class="modal-inner-box">
+				<div class="modal-inner-content">
+					<section class="footer-modal-content">
+						<button title="팝업 닫기" class="modal-close-btn" onclick="modalPopupClose('#popupMobileLearning05')"><i class="xi-close-thin"></i></button>
+						<h1>유형학습</h1>
+						<div class="video-modal-inner">
+							<div class="video-container" data-code="qh_ixnBqLMA"></div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- script -->
+	<script type="text/javascript" src="/js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="/js/slick.js"></script>
+	<script type="text/javascript" src="/js/swiper.min.js"></script>
+	<script type="text/javascript" src="/js/waypoints.min.js"></script>
+	<script type="text/javascript" src="/js/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="/js/function.js?ver=230725"></script>
+	<script type="text/javascript" src="/js/common.js?ver=230802"></script>
+	<script type="text/javascript" src="/js/nav.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
+	<!--[if lt IE 9]>
+		<script src="/js/vendor/html5shiv.js"></script>
+		<script src="/js/vendor/respond.min.js"></script>
+	<![endif]-->
+	<!-- //script -->
+
 </body>
 </html>
